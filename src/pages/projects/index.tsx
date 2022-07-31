@@ -30,28 +30,24 @@ export default function Projects({ projects }: ProjectsProps) {
                 <strong>{project.strong}</strong>
                 <p>{project.description}</p>
                 <div className={styles.buttons}>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={project.github} target="_blank" rel="noreferrer">
                     <SiGithub /> Repositório
                   </a>
 
                   {project.site !== " " ? (
                     <a
                       href={project.site}
-                      target="_blank"
                       color="#393f44"
-                      rel="noopener norenoreferrer"
+                      target="_blank"
+                      rel="noreferrer"
                     >
                       <BiLinkExternal /> Demo
                     </a>
                   ) : (
                     <a
-                      target="_blank"
-                      rel="noopener norenoreferrer"
                       className={styles.blocked}
+                      target="_blank"
+                      rel="noreferrer"
                     >
                       <BiLinkExternal /> Demo
                     </a>
