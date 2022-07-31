@@ -49,3 +49,15 @@
   left: 0;
   background: var(--purple);
 }
+
+@media (max-width: 768px) {
+  .HeaderContainer {
+    div {
+      nav {
+        a {
+          margin: 0 0.5rem;
+        }
+      }
+    }
+  }
+}

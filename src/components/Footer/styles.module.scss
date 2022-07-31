@@ -1,15 +1,22 @@
 .footer {
-  background: var(--gray-500);
-  height: 60px;
-  width: 100%; 
+  // background: var(--gray-500);
+  height: 100px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  display: grid;
 
-  div {
-    span {
-      color: var(--text-purple);
-      font-weight: 600;
-    }
+  .desc {
+    margin-bottom: 0.5rem;
+  }
+
+  .social {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
   }
 }

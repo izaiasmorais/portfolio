@@ -1,7 +1,7 @@
 .HomeContainer {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1060px;
+  max-width: 1140px;
   margin: 7rem auto;
   gap: 4rem;
 
@@ -54,7 +54,7 @@
   }
 
   .svg {
-    max-width: 400px;
+    max-width: 600px;
   }
 }
 
@@ -75,7 +75,6 @@
     }
 
     div {
-      margin-left: 1rem;
       grid-column: 2 / 3;
       grid-row: 1;
       display: grid;
