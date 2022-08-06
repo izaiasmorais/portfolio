@@ -66,7 +66,7 @@ export async function getStaticProps() {
   const response = await client.query<ProjectsProps>({
     query: gql`
       query MyQuery {
-        projects(last: 12, orderBy: order_ASC) {
+        projects(last: 14, orderBy: order_ASC) {
           image
           strong
           description
