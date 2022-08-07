@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.desc}>
-        Portfolio - Todos os direitos reservados
+        Portfolio © Todos os direitos reservados
       </div>
       <div className={styles.social}>
         <a href="https://github.com/IzaiasMorais">

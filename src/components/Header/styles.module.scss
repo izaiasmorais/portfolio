@@ -4,11 +4,15 @@
   div {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100px;
+
+    button {
+      display: none;
+    }
 
     > a {
       font-size: 1.5rem;
@@ -59,5 +63,40 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 510px) {
+  .HeaderContainer {
+    div {
+      button {
+        display: inherit;
+        background: none;
+        border: none;
+      }
+
+      nav {
+        display: grid;
+        margin: 11.5rem 1rem 0 0;
+        padding: 1rem 3rem 1rem 1rem;
+        border-radius: 0.25rem;
+        position: absolute;
+        background: var(--button-color);
+        right: 0;
+        top: -7rem;
+        transition: all 0.5s;
+        animation: up 0.3s;
+      }
+    }
+  }
+}
+
+@keyframes up {
+  from {
+    transform: translate3d(0, -15px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
   }
 }

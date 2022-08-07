@@ -1,8 +1,12 @@
 import styles from "./styles.module.scss";
 import Link from "next/link";
 import { ActiveLink } from "../ActiveLink";
+import { AiOutlineMenu } from "react-icons/ai";
+import { useState } from "react";
 
 export function Header() {
+  const [state, setState] = useState(false);
+
   return (
     <header className={styles.HeaderContainer}>
       <div>
@@ -10,17 +14,26 @@ export function Header() {
           <a>Portfólio</a>
         </Link>
 
-        <nav>
-          <ActiveLink href="/about" activeClassName={styles.active}>
-            <a>Sobre</a>
-          </ActiveLink>
-          <ActiveLink href="/projects" activeClassName={styles.active}>
-            <a href="">Projetos</a>
-          </ActiveLink>
-          <ActiveLink href="/contact" activeClassName={styles.active}>
-            <a href="">Contato</a>
-          </ActiveLink>
-        </nav>
+        <button onClick={() => setState(!state)}>
+          <AiOutlineMenu size={25} color="white" />
+        </button>
+
+        {state && (
+          <nav>
+            <ActiveLink href="/" activeClassName={styles.active}>
+              <a onClick={() => setState(false)}>Home</a>
+            </ActiveLink>
+            <ActiveLink href="/about" activeClassName={styles.active}>
+              <a onClick={() => setState(false)}>Sobre</a>
+            </ActiveLink>
+            <ActiveLink href="/projects" activeClassName={styles.active}>
+              <a onClick={() => setState(false)}>Projetos</a>
+            </ActiveLink>
+            <ActiveLink href="/contact" activeClassName={styles.active}>
+              <a onClick={() => setState(false)}>Contato</a>
+            </ActiveLink>
+          </nav>
+        )}
       </div>
     </header>
   );
