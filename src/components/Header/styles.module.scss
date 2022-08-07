@@ -14,6 +14,10 @@
       display: none;
     }
 
+    .dropDown {
+      display: none;
+    }
+
     > a {
       font-size: 1.5rem;
       font-weight: 600;
@@ -75,7 +79,11 @@
         border: none;
       }
 
-      nav {
+      .menu {
+        display: none;
+      }
+
+      .dropDown {
         display: grid;
         margin: 11.5rem 1rem 0 0;
         padding: 1rem 3rem 1rem 1rem;
@@ -84,7 +92,7 @@
         background: var(--button-color);
         right: 0;
         top: -7rem;
-        transition: all 0.5s;
+        transition: all 0.3s;
         animation: up 0.3s;
       }
     }
