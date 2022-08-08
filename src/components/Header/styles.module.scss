@@ -77,6 +77,8 @@
         display: inherit;
         background: none;
         border: none;
+        padding: 1rem;
+        padding-right: 0;
       }
 
       .menu {
@@ -94,6 +96,10 @@
         top: -7rem;
         transition: all 0.3s;
         animation: up 0.3s;
+
+        a {
+          width: 100%;
+        }
       }
     }
   }
