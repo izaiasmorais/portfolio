@@ -21,14 +21,14 @@ export default function About() {
       <div className={styles.aboutDiv}>
         <div>
           <p>
-            Olá, me chamo Izaías e sou epaixonado por Programação. Venho
+            Olá, me chamo Izaías e sou apaixonado por Programação. Venho
             estudando tecnologias na área há cerca de 3 anos, com foco no
             desenvolvimento de aplicações Web. Sigo buscando oportunidades para
             resolver problemas. <br /> <br />
-            Minha jornada como programador começou em 2019, onde estudava o
-            básico de Pyhton e depois migrando para JavaScript, uma linguagem
-            que me encantou demais. Ao longo de todos esses anos desenvolvi
-            vários projetos, sempre buscando desenvolver soluções para problemas
+            Minha jornada como programador começou em 2019, onde estudei o
+            básico de Pyhton e depois migrei para JavaScript, uma linguagem
+            que me encantou bastante. Ao longo de todos esses anos desenvolvi
+            vários projetos, sempre buscando criar soluções para problemas
             reais, e até posso dizer que quem me conhece sabe que eu nunca gostei
             muito de projetos &quot;estáticos&quot;, que não resolviam nenhum
             problema ou possuíam alguma funcionalidade.
