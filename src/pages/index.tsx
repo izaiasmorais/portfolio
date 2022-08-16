@@ -19,7 +19,7 @@ const Home: NextPage = () => {
             </Link>
 
             <a
-              href="https://drive.google.com/file/d/1oaRpgEvUdJN1VcgRROA0pRIkLR6x6x1G/view"
+              href="https://drive.google.com/file/d/1hg_yB0C3yegEJyAiilb_swSlTaqDbruX/view"
               className={styles.cv}
               target="_blank"
               rel="noreferrer"
