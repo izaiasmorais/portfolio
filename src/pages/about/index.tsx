@@ -26,12 +26,12 @@ export default function About() {
             desenvolvimento de aplicações Web. Sigo buscando oportunidades para
             resolver problemas. <br /> <br />
             Minha jornada como programador começou em 2019, onde estudei o
-            básico de Pyhton e depois migrei para JavaScript, uma linguagem
-            que me encantou bastante. Ao longo de todos esses anos desenvolvi
-            vários projetos, sempre buscando criar soluções para problemas
-            reais, e até posso dizer que quem me conhece sabe que eu nunca gostei
-            muito de projetos &quot;estáticos&quot;, que não resolviam nenhum
-            problema ou possuíam alguma funcionalidade.
+            básico de Pyhton e depois migrei para JavaScript, uma linguagem que
+            me encantou bastante. Ao longo de todos esses anos desenvolvi vários
+            projetos, sempre buscando criar soluções para problemas reais, e até
+            posso dizer que quem me conhece sabe que eu nunca gostei muito de
+            projetos &quot;estáticos&quot;, que não resolviam nenhum problema ou
+            não possuíam alguma funcionalidade.
           </p>
         </div>
       </div>
@@ -124,10 +124,12 @@ export default function About() {
             target="_blank"
             rel="noreferrer"
           >
-            Rocketseat Ignite trilha React
+            Rocketseat Ignite trilha ReactJS e Node.JS
           </a>
           <p>
-            Programa de aceleração com foco em especialização na programação.
+            Programa de aceleração com foco em especialização na programação,
+            onde me especializei em desenvolvimento com ReactJS. Atualmente
+            estou estudando Node.JS no programa.
           </p>
         </div>
       </div>
