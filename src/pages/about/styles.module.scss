@@ -49,13 +49,19 @@
     }
 
     div {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
       gap: 0.7rem;
-      max-width: max-content;
+      grid-row: auto;
+
+      // max-width: max-content;
 
       div {
         padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
@@ -99,6 +105,14 @@
   }
 }
 
+@media (max-width: 1080px) {
+  .technologies {
+    div {
+      grid-template-columns: repeat(4, 1fr) !important;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .moreInfo {
     grid-template-columns: 1fr !important;
@@ -106,6 +120,7 @@
 
   .technologies {
     div {
+      grid-template-columns: repeat(2, 1fr) !important;
       margin: 0 auto;
     }
   }

@@ -40,34 +40,44 @@ export default function About() {
         <div>
           <div>
             <DiHtml5 size={40} />
+            <p>HTML5</p>
           </div>
           <div>
             <DiCss3 size={40} />
+            <p>CSS3</p>
           </div>
           <div>
             <DiJsBadge size={40} />
+            <p>JavaScript</p>
           </div>
           <div>
             <SiTypescript size={40} />
+            <p>Typescript</p>
           </div>
           <div>
             <DiReact size={40} />
+            <p>ReactJS</p>
           </div>
           <div>
             <SiNextdotjs size={40} />
+            <p>Next.js</p>
           </div>
           <div>
             <SiVuedotjs size={40} />
+            <p>VueJS 2</p>
           </div>
 
           <div>
             <SiFigma size={40} />
+            <p>Figma</p>
           </div>
           <div>
             <SiTailwindcss size={40} />
+            <p>TailwindCSS</p>
           </div>
           <div>
             <SiChakraui size={40} />
+            <p>ChakraUI</p>
           </div>
           <div>
             <img
@@ -75,15 +85,19 @@ export default function About() {
               width={40}
               height={40}
             />
+            <p>FaunaDB</p>
           </div>
           <div>
             <GrGraphQl size={40} />
+            <p>GraphQL</p>
           </div>
           <div>
             <SiNotion size={40} />
+            <p>Notion</p>
           </div>
           <div>
             <VscAzure size={40} />
+            <p>Azure</p>
           </div>
           <div>
             <img
@@ -91,12 +105,15 @@ export default function About() {
               width={40}
               height={40}
             />
+            <p>Styled components</p>
           </div>
           <div>
             <SiSass size={40} />
+            <p>Sass</p>
           </div>
           <div>
             <GrStripe size={40} />
+            <p>StripeAPI</p>
           </div>
         </div>
       </div>
@@ -112,11 +129,13 @@ export default function About() {
         <div>
           <h1>Cursos | Bootcamps</h1>
           <a href="https://www.origamid.com/" target="_blank" rel="noreferrer">
-            Origamid
+            Origamid | Cursos de formação
           </a>
           <p>
             Programa de formação em desenvolvimento web, onde cursei Webdesign
             completo, CSS layouts, JavaScript completo ES6 e Vue JS 2 Completo.
+            O programa foi essencial para minha formação inicial em programação.
+            Formei uma ótimo base que até hoje faz diferença no meu aprendizado.
           </p>
           <br />
           <a
@@ -128,8 +147,9 @@ export default function About() {
           </a>
           <p>
             Programa de aceleração com foco em especialização na programação,
-            onde me especializei em desenvolvimento com ReactJS. Atualmente
-            estou estudando Node.JS no programa.
+            onde me especializei em desenvolvimento de aplicações web com
+            ReactJS. Atualmente estou estudando Node.js no programa, em busca do
+            desenvolvimento Full-Stack.
           </p>
         </div>
       </div>
