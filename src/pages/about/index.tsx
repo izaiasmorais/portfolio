@@ -9,6 +9,7 @@ import {
   SiChakraui,
   SiNotion,
   SiSass,
+  SiMongodb
 } from "react-icons/si";
 import { GrGraphQl, GrStripe } from "react-icons/gr";
 import { VscAzure } from "react-icons/vsc";
@@ -52,7 +53,7 @@ export default function About() {
           </div>
           <div>
             <SiTypescript size={40} />
-            <p>Typescript</p>
+            <p>TypeScript</p>
           </div>
           <div>
             <DiReact size={40} />
@@ -64,7 +65,7 @@ export default function About() {
           </div>
           <div>
             <SiVuedotjs size={40} />
-            <p>VueJS 2</p>
+            <p>Vue 2</p>
           </div>
 
           <div>
@@ -86,6 +87,10 @@ export default function About() {
               height={40}
             />
             <p>FaunaDB</p>
+          </div>
+          <div>
+            <SiMongodb size={40}/>
+            <p>MongoDB</p>
           </div>
           <div>
             <GrGraphQl size={40} />
