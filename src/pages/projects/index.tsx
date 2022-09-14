@@ -8,9 +8,11 @@ interface ProjectsProps {
   projects: {
     strong: string;
     site?: string;
-    image: string;
     description: string;
     github?: string;
+    image: {
+      url: string;
+    };
   }[];
 }
 
@@ -24,7 +26,7 @@ export default function Projects({ projects }: ProjectsProps) {
           {projects.map((project) => (
             <li key={project.strong}>
               <div className={styles.image}>
-                <img src={project.image} alt={project.strong} />
+                <img src={project.image?.url} alt={project.strong} />
               </div>
               <div className={styles.content}>
                 <strong>{project.strong}</strong>
@@ -66,12 +68,14 @@ export async function getStaticProps() {
   const response = await client.query<ProjectsProps>({
     query: gql`
       query MyQuery {
-        projects(last: 20, orderBy: order_ASC) {
-          image
-          strong
+        projects(last: 25, orderBy: order_ASC) {
+          github
           description
           site
-          github
+          strong
+          image {
+            url
+          }
         }
       }
     `,
@@ -85,6 +89,6 @@ export async function getStaticProps() {
     props: {
       projects,
     },
-    // revalidate: 60 * 60 * 24, // 24 hours
+    revalidate: 60 * 60 * 24, // 24 hours
   };
 }
