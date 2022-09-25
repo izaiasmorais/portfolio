@@ -9,7 +9,7 @@ import {
   SiChakraui,
   SiNotion,
   SiSass,
-  SiMongodb
+  SiMongodb,
 } from "react-icons/si";
 import { GrGraphQl, GrStripe } from "react-icons/gr";
 import { VscAzure } from "react-icons/vsc";
@@ -89,7 +89,7 @@ export default function About() {
             <p>FaunaDB</p>
           </div>
           <div>
-            <SiMongodb size={40}/>
+            <SiMongodb size={40} />
             <p>MongoDB</p>
           </div>
           <div>
@@ -126,11 +126,17 @@ export default function About() {
         <div>
           <h1>Histórico Acadêmico</h1>
           <a href="https://www.ifpi.edu.br/" target="_blank" rel="noreferrer">
-            IFPI Campus Teresina Central
+            IFPI - Campus Teresina Central
           </a>
           <p>Técnico em administração | Fev. de 2019 - Jun. de 2022</p>
-        </div>
 
+          <br />
+
+          <a href="https://ufpi.br/" target="_blank" rel="noreferrer">
+            UFPI - Campus Universitário Ministro Petrônio Portella
+          </a>
+          <p>Ciêcias da Computação | Nov. de 2022 - Cursando...</p>
+        </div>
         <div>
           <h1>Cursos | Bootcamps</h1>
           <a href="https://www.origamid.com/" target="_blank" rel="noreferrer">
@@ -139,8 +145,7 @@ export default function About() {
           <p>
             Programa de formação em desenvolvimento web, onde cursei Webdesign
             completo, CSS layouts, JavaScript completo ES6 e Vue JS 2 Completo.
-            O programa foi essencial para minha formação inicial em programação.
-            Formei uma ótimo base que até hoje faz diferença no meu aprendizado.
+            O programa foi essencial para minha base na programação.
           </p>
           <br />
           <a
@@ -148,12 +153,12 @@ export default function About() {
             target="_blank"
             rel="noreferrer"
           >
-            Rocketseat Ignite trilha ReactJS e Node.JS
+            Rocketseat Ignite trilha ReactJS/Node.JS
           </a>
           <p>
             Programa de aceleração com foco em especialização na programação,
-            onde me especializei em desenvolvimento de aplicações web com
-            ReactJS. Atualmente estou estudando Node.js no programa, em busca do
+            onde me aprofundei no desenvolvimento de aplicações web com ReactJS.
+            Atualmente estou estudando Node.js no programa, rumo ao
             desenvolvimento Full-Stack.
           </p>
         </div>
