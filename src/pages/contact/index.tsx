@@ -27,7 +27,7 @@ export default function Contact() {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/iza%C3%ADas-lima-4783091a6/"
+              href="https://www.linkedin.com/in/izaias-lima//"
               target="_blank"
               rel="noreferrer"
             >
@@ -36,13 +36,13 @@ export default function Contact() {
           </li>
           <li>
             <a href="https://discord.com/users/734056109605650534">
-              <IoLogoDiscord size={25}/>
+              <IoLogoDiscord size={25} />
               Discord
             </a>
           </li>
           <li>
             <a
-              href="https://www.instagram.com/_izaias_morais/"
+              href="https://www.instagram.com/izaias_morais_/"
               target="_blank"
               rel="noreferrer"
             >
