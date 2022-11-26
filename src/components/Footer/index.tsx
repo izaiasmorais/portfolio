@@ -10,10 +10,10 @@ export function Footer() {
         Portfolio © Todos os direitos reservados
       </div>
       <div className={styles.social}>
-        <a href="https://github.com/IzaiasMorais">
+        <a href="https://github.com/izaiasmorais">
           <SiGithub size={25} />
         </a>
-        <a href="https://www.instagram.com/_izaias_morais/">
+        <a href="https://www.instagram.com/izaias_morais_/">
           <RiInstagramFill size={30} />
         </a>
         <a href="https://discord.com/users/734056109605650534">
