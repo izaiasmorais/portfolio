@@ -89,6 +89,9 @@ importers:
       '@radix-ui/react-tooltip':
         specifier: ^1.2.7
         version: 1.2.7(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@tanstack/react-query':
+        specifier: ^5.80.11
+        version: 5.80.11(react@19.1.0)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -1223,6 +1226,14 @@ packages:
 
   '@tailwindcss/postcss@4.1.10':
     resolution: {integrity: sha512-B+7r7ABZbkXJwpvt2VMnS6ujcDoR2OOcFaqrLIo1xbcdxje4Vf+VgJdBzNNbrAjBj/rLZ66/tlQ1knIGNLKOBQ==}
+
+  '@tanstack/query-core@5.80.11':
+    resolution: {integrity: sha512-o4teQa5rn8hgcZap6KezFC4XITD3D9S5oTqC7FMEnP5ZNqlD62o+8CrdiH15hOhvuqDihg6gCXMaeXxy2SFJIA==}
+
+  '@tanstack/react-query@5.80.11':
+    resolution: {integrity: sha512-LbaXkpiafTP6YA1/PUAl16e4t+cd1c2RPNF3bX4nVaktzasf4yU7me72JDtmlDfle90mR7IRIFgJRSgX8Hiabg==}
+    peerDependencies:
+      react: ^18 || ^19
 
   '@tybys/wasm-util@0.9.0':
     resolution: {integrity: sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw==}
@@ -3888,6 +3899,13 @@ snapshots:
       '@tailwindcss/oxide': 4.1.10
       postcss: 8.5.6
       tailwindcss: 4.1.10
+
+  '@tanstack/query-core@5.80.11': {}
+
+  '@tanstack/react-query@5.80.11(react@19.1.0)':
+    dependencies:
+      '@tanstack/query-core': 5.80.11
+      react: 19.1.0
 
   '@tybys/wasm-util@0.9.0':
     dependencies:

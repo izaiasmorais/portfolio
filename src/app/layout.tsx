@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
+import Providers from "./providers";
 
 export const metadata: Metadata = {
 	title: "Izaías Morais",
@@ -13,7 +14,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="pt-br">
+		<html lang="pt-br" suppressHydrationWarning>
 			<head>
 				<link
 					rel="shortcut icon"
@@ -22,7 +23,9 @@ export default function RootLayout({
 				/>
 			</head>
 
-			<body className={`${GeistMono.className} antialiased`}>{children}</body>
+			<body className={`${GeistMono.className} antialiased`}>
+				<Providers>{children}</Providers>
+			</body>
 		</html>
 	);
 }
