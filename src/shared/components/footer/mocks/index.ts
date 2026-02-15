@@ -6,9 +6,9 @@ import {
 	Mail01Icon,
 	NewTwitterIcon,
 } from "@hugeicons/core-free-icons";
-import type { Translations } from "@/shared/i18n/types";
+import type { Dictionary } from "@/shared/i18n/types";
 
-export function getSocialLinks(socialLabels: Translations["ui"]["footer"]["socialLabels"]) {
+export function getSocialLinks(socialLabels: Dictionary["ui"]["footer"]["socialLabels"]) {
 	return [
 		{
 			href: "https://api.whatsapp.com/send/?phone=5586981475447&text&type=phone_number&app_absent=0",
