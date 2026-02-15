@@ -5,6 +5,7 @@ export interface Project {
 	category: Exclude<Category, "All">;
 	year: number | null;
 	repo: string | null;
+	live: string | null;
 	stack: string[];
 	thumb: string;
 }

@@ -4,6 +4,7 @@
 		"category": "Freelance",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": ["NestJS", "Node.js", "Prisma", "TypeScript", "Vitest"],
 		"thumb": ""
 	},
@@ -12,6 +13,7 @@
 		"category": "Work",
 		"year": 2025,
 		"repo": null,
+		"live": null,
 		"stack": ["Langchain", "Langgraph", "Python", "WhisperX"],
 		"thumb": ""
 	},
@@ -20,6 +22,7 @@
 		"category": "Studies",
 		"year": 2022,
 		"repo": "https://github.com/izaiasmorais/bikcraft",
+		"live": "https://bikcraft-own.netlify.app/",
 		"stack": [],
 		"thumb": "/projects/bikcraft.png"
 	},
@@ -28,6 +31,7 @@
 		"category": "Studies",
 		"year": 2024,
 		"repo": "https://github.com/izaiasmorais/cerc",
+		"live": "https://cercdev.vercel.app/",
 		"stack": ["Next.js"],
 		"thumb": "/projects/cerc.png"
 	},
@@ -36,6 +40,7 @@
 		"category": "Work",
 		"year": 2025,
 		"repo": null,
+		"live": null,
 		"stack": ["Next.js", "TypeScript"],
 		"thumb": "/projects/compex.png"
 	},
@@ -44,6 +49,7 @@
 		"category": "Studies",
 		"year": 2024,
 		"repo": "https://github.com/izaiasmorais/devstore",
+		"live": null,
 		"stack": ["Next.js"],
 		"thumb": "/projects/devstore.png"
 	},
@@ -52,6 +58,7 @@
 		"category": "Personal",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/ezblog.png"
 	},
@@ -60,6 +67,7 @@
 		"category": "Personal",
 		"year": 2025,
 		"repo": null,
+		"live": null,
 		"stack": ["Drizzle", "Fastify", "Next.js", "Prisma"],
 		"thumb": "/projects/ezmoney.png"
 	},
@@ -68,6 +76,7 @@
 		"category": "Work",
 		"year": 2025,
 		"repo": null,
+		"live": null,
 		"stack": ["Next.js"],
 		"thumb": ""
 	},
@@ -76,6 +85,7 @@
 		"category": "Studies",
 		"year": 2022,
 		"repo": "https://github.com/izaiasmorais/flexblog",
+		"live": "https://flexblog-own.netlify.app/",
 		"stack": ["CSS", "HTML"],
 		"thumb": "/projects/flexblog.png"
 	},
@@ -84,6 +94,7 @@
 		"category": "Work",
 		"year": 2025,
 		"repo": null,
+		"live": null,
 		"stack": ["VueJS"],
 		"thumb": "/projects/govchat.png"
 	},
@@ -92,6 +103,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": ["Next.js", "TypeScript"],
 		"thumb": "/projects/dashgo.png"
 	},
@@ -100,6 +112,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/ig.news.png"
 	},
@@ -108,6 +121,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": "https://github.com/izaiasmorais/design-system",
+		"live": null,
 		"stack": ["React", "Storybook", "Tailwind", "Vite"],
 		"thumb": "/projects/ignite-lab-design-system.png"
 	},
@@ -116,6 +130,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/ignite-lab.png"
 	},
@@ -124,6 +139,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/ignite-tailwind.png"
 	},
@@ -132,6 +148,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/ignite-call.png"
 	},
@@ -140,6 +157,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": ["ReactJS"],
 		"thumb": "/projects/coffee-delivery.png"
 	},
@@ -148,14 +166,16 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": ["ReactJS"],
 		"thumb": "/projects/dtmoney.png"
 	},
-{
+	{
 		"name": "Ignite 2022 | Ignite Timer",
 		"category": "Studies",
 		"year": 2024,
 		"repo": "https://github.com/izaiasmorais/ignite-timer",
+		"live": null,
 		"stack": ["ReactJS"],
 		"thumb": "/projects/ignite-timer.png"
 	},
@@ -164,6 +184,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": ["ReactJS"],
 		"thumb": "/projects/pizzashop.png"
 	},
@@ -172,6 +193,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": ["ReactJS"],
 		"thumb": "/projects/ignite-todo.png"
 	},
@@ -180,6 +202,7 @@
 		"category": "Work",
 		"year": 2025,
 		"repo": null,
+		"live": null,
 		"stack": ["Next.js"],
 		"thumb": "/projects/imoveispi.png"
 	},
@@ -188,6 +211,7 @@
 		"category": "Work",
 		"year": 2025,
 		"repo": null,
+		"live": null,
 		"stack": ["Next.js"],
 		"thumb": "/projects/legia.png"
 	},
@@ -196,6 +220,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": "https://github.com/izaiasmorais/letmeask",
+		"live": null,
 		"stack": ["AI SDK", "React", "TypeScript"],
 		"thumb": "/projects/letmeask.png"
 	},
@@ -204,6 +229,7 @@
 		"category": "Studies",
 		"year": 2022,
 		"repo": "https://github.com/izaiasmorais/lobo-portfolio",
+		"live": "https://lobo-portfolio-black.vercel.app/",
 		"stack": [],
 		"thumb": "/projects/lobo-portfolio.png"
 	},
@@ -212,6 +238,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/memo-ai.png"
 	},
@@ -220,14 +247,16 @@
 		"category": "Freelance",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": ["ReactJS"],
 		"thumb": "/projects/monitora-atb.png"
 	},
-{
+	{
 		"name": "Next.js Boilerplate",
 		"category": "Work",
 		"year": 2025,
 		"repo": null,
+		"live": null,
 		"stack": ["FastAPI", "Next.js", "Python"],
 		"thumb": "/projects/nextjs-boilerplate.png"
 	},
@@ -236,6 +265,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/nlw-copa.png"
 	},
@@ -244,6 +274,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/nlw-esports.png"
 	},
@@ -252,6 +283,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/nlw-setup.png"
 	},
@@ -260,6 +292,7 @@
 		"category": "Freelance",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": ["ReactJS"],
 		"thumb": "/projects/nspedidos.png"
 	},
@@ -268,6 +301,7 @@
 		"category": "Personal",
 		"year": 2025,
 		"repo": null,
+		"live": null,
 		"stack": ["Fastify", "Next.js", "Node.js", "Prisma", "Vitest"],
 		"thumb": "/projects/pdv.png"
 	},
@@ -276,6 +310,7 @@
 		"category": "Personal",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/phanox.png"
 	},
@@ -284,6 +319,7 @@
 		"category": "Work",
 		"year": 2025,
 		"repo": null,
+		"live": null,
 		"stack": ["Fastify", "Node.js", "Prisma", "ReactJS"],
 		"thumb": "/projects/plaseg.png"
 	},
@@ -292,6 +328,7 @@
 		"category": "Personal",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/portfolio.png"
 	},
@@ -300,6 +337,7 @@
 		"category": "Freelance",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/psiform.png"
 	},
@@ -308,6 +346,7 @@
 		"category": "Freelance",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/psiform-sites.png"
 	},
@@ -316,14 +355,16 @@
 		"category": "Freelance",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/psiway.png"
 	},
-{
+	{
 		"name": "Retaguarda Web",
 		"category": "Freelance",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": ["ReactJS"],
 		"thumb": "/projects/retaguarda-gestao.png"
 	},
@@ -332,6 +373,7 @@
 		"category": "Personal",
 		"year": 2025,
 		"repo": null,
+		"live": null,
 		"stack": ["GO", "Next.js"],
 		"thumb": "/projects/risultar.png"
 	},
@@ -340,6 +382,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": ["ReactJS"],
 		"thumb": "/projects/seed-frontend-react.png"
 	},
@@ -348,6 +391,7 @@
 		"category": "Freelance",
 		"year": 2024,
 		"repo": "https://github.com/izaiasmorais/simux",
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/simux.png"
 	},
@@ -356,6 +400,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/slider.png"
 	},
@@ -364,6 +409,7 @@
 		"category": "Personal",
 		"year": 2025,
 		"repo": null,
+		"live": null,
 		"stack": ["Fastify", "Next.js", "Node.js", "Prisma"],
 		"thumb": "/projects/spike.png"
 	},
@@ -372,6 +418,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/store-crud.png"
 	},
@@ -380,6 +427,7 @@
 		"category": "Studies",
 		"year": 2022,
 		"repo": "https://github.com/izaiasmorais/techno-courses",
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/techno-courses.png"
 	},
@@ -388,6 +436,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": [],
 		"thumb": "/projects/techno.png"
 	},
@@ -396,6 +445,7 @@
 		"category": "Freelance",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": ["React Native"],
 		"thumb": "/projects/antibioticos-hu.png"
 	},
@@ -404,6 +454,7 @@
 		"category": "Studies",
 		"year": null,
 		"repo": null,
+		"live": null,
 		"stack": ["ReactJS"],
 		"thumb": "/projects/summary.png"
 	}

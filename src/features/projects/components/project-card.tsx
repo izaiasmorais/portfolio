@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { LinkSquare02Icon } from "@hugeicons/core-free-icons";
+import {
+	LinkSquare02Icon,
+	Globe02Icon,
+} from "@hugeicons/core-free-icons";
 import { useLanguage } from "@/shared/i18n/use-language";
 import type { Project } from "../types";
 import { TechBadges } from "./tech-badges";
@@ -24,16 +27,28 @@ export function ProjectCard({ project }: ProjectCardProps) {
 						className="object-cover transition-transform duration-500 group-hover:scale-105"
 					/>
 				)}
-				{project.repo && (
-					<div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
-						<Link
-							href={project.repo}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="p-1.5 bg-background/90 rounded-full backdrop-blur-sm shadow-sm hover:scale-105 transition-transform text-foreground block"
-						>
-							<HugeiconsIcon icon={LinkSquare02Icon} size={14} />
-						</Link>
+				{(project.repo || project.live) && (
+					<div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity flex gap-2">
+						{project.live && (
+							<Link
+								href={project.live}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="p-1.5 bg-background/90 rounded-full backdrop-blur-sm shadow-sm hover:scale-105 transition-transform text-foreground block"
+							>
+								<HugeiconsIcon icon={Globe02Icon} size={14} />
+							</Link>
+						)}
+						{project.repo && (
+							<Link
+								href={project.repo}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="p-1.5 bg-background/90 rounded-full backdrop-blur-sm shadow-sm hover:scale-105 transition-transform text-foreground block"
+							>
+								<HugeiconsIcon icon={LinkSquare02Icon} size={14} />
+							</Link>
+						)}
 					</div>
 				)}
 			</div>
