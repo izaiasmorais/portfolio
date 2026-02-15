@@ -13,13 +13,13 @@ import { Pagination } from "./pagination";
 
 export function ProjectsSection() {
 	const { t } = useLanguage();
-	const [activeTab, setActiveTab] = useState<Category>("Todos");
+	const [activeTab, setActiveTab] = useState<Category>("All");
 	const [columns, setColumns] = useState<2 | 4>(4);
 	const [currentPage, setCurrentPage] = useState(1);
 	const [itemsPerPage, setItemsPerPage] = useState<ItemsPerPage>(8);
 
 	const filteredProjects =
-		activeTab === "Todos"
+		activeTab === "All"
 			? projects
 			: projects.filter((project) => project.category === activeTab);
 

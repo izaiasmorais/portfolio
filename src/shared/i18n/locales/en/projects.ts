@@ -4,10 +4,10 @@ export const projects: Dictionary["projects"] = {
 	title: "Projects",
 	subtitle: "A collection of projects carried out in various areas.",
 	categories: {
-		Todos: "All",
-		Pessoais: "Personal",
-		Trabalho: "Work",
+		All: "All",
+		Personal: "Personal",
+		Work: "Work",
 		Freelance: "Freelance",
-		Estudos: "Studies",
+		Studies: "Studies",
 	},
 };

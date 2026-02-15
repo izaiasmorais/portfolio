@@ -1,26 +1,4 @@
-"use client";
-
-import Image from "next/image";
-import { HugeiconsIcon } from "@hugeicons/react";
-import { Shield01Icon } from "@hugeicons/core-free-icons";
-import { SectionContainer } from "@/shared/components/section-container";
-import { useLanguage } from "@/shared/i18n/use-language";
-import type { SkillCategoryKey } from "@/shared/i18n/types";
-
-type SkillIcon =
-	| { type: "svg"; src: string }
-	| { type: "svg-themed"; light: string; dark: string }
-	| { type: "fallback"; icon: React.ReactNode };
-
-interface Skill {
-	name: string;
-	icon: SkillIcon;
-}
-
-interface SkillCategory {
-	key: SkillCategoryKey;
-	skills: Skill[];
-}
+import type { SkillIcon, SkillCategory } from "../types";
 
 function svg(src: string): SkillIcon {
 	return { type: "svg", src };
@@ -34,52 +12,9 @@ function svgThemed(name: string): SkillIcon {
 	};
 }
 
-function SkillIcon({ icon }: { icon: SkillIcon }) {
-	switch (icon.type) {
-		case "svg":
-			return (
-				<Image
-					src={icon.src}
-					alt=""
-					width={16}
-					height={16}
-					className="size-4"
-				/>
-			);
-		case "svg-themed":
-			return (
-				<>
-					<Image
-						src={icon.light}
-						alt=""
-						width={16}
-						height={16}
-						className="size-4 dark:hidden"
-					/>
-					<Image
-						src={icon.dark}
-						alt=""
-						width={16}
-						height={16}
-						className="size-4 hidden dark:block"
-					/>
-				</>
-			);
-		case "fallback":
-			return <span>{icon.icon}</span>;
-	}
-}
+export { svg, svgThemed };
 
-function SkillBadge({ name, icon }: Skill) {
-	return (
-		<div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-card border border-border text-xs md:text-sm font-medium hover:border-muted-foreground/30 transition-colors cursor-default">
-			<SkillIcon icon={icon} />
-			<span className="text-foreground">{name}</span>
-		</div>
-	);
-}
-
-const categories: SkillCategory[] = [
+export const categories: SkillCategory[] = [
 	{
 		key: "languages",
 		skills: [
@@ -99,21 +34,10 @@ const categories: SkillCategory[] = [
 			{ name: "Vue.js", icon: svg("/skills/vuejs.svg") },
 			{ name: "TailwindCSS", icon: svg("/skills/tailwindcss.svg") },
 			{ name: "shadcn/ui", icon: svgThemed("shadcn") },
+			{ name: "Storybook", icon: svg("/skills/storybook.svg") },
 			{ name: "TanStack Query", icon: svg("/skills/tanstack.svg") },
 			{ name: "Resend", icon: svgThemed("resend") },
-			{
-				name: "BetterAuth",
-				icon: {
-					type: "fallback",
-					icon: (
-						<HugeiconsIcon
-							icon={Shield01Icon}
-							size={16}
-							className="text-foreground"
-						/>
-					),
-				},
-			},
+			{ name: "BetterAuth", icon: svg("/skills/betterauth.svg") },
 			{ name: "Trigger.dev", icon: svg("/skills/trigger.svg") },
 			{ name: "Vitest", icon: svg("/skills/vitest.svg") },
 			{ name: "Playwright", icon: svg("/skills/playwright.svg") },
@@ -170,30 +94,3 @@ const categories: SkillCategory[] = [
 		],
 	},
 ];
-
-export function SkillsSection() {
-	const { t } = useLanguage();
-
-	return (
-		<SectionContainer
-			id="skills"
-			title={t.skills.title}
-			subtitle={t.skills.subtitle}
-		>
-			<div className="flex flex-col gap-10">
-				{categories.map((category) => (
-					<div key={category.key} className="flex flex-col gap-4">
-						<h3 className="text-muted-foreground text-xs uppercase tracking-widest pl-1">
-							{t.skills.categories[category.key]}
-						</h3>
-						<div className="flex flex-wrap gap-3">
-							{category.skills.map((skill, sIdx) => (
-								<SkillBadge key={sIdx} {...skill} />
-							))}
-						</div>
-					</div>
-				))}
-			</div>
-		</SectionContainer>
-	);
-}

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { LinkSquare02Icon } from "@hugeicons/core-free-icons";
+import { useLanguage } from "@/shared/i18n/use-language";
 import type { Project } from "../types";
 import { TechBadges } from "./tech-badges";
 
@@ -10,6 +11,8 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
+	const { t } = useLanguage();
+
 	return (
 		<div className="group bg-card border border-border rounded-xl overflow-hidden hover:shadow-sm transition-all duration-300 flex flex-col">
 			<div className="relative w-full aspect-video overflow-hidden bg-muted border-b border-border">
@@ -42,7 +45,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
 							{project.name}
 						</h3>
 						<span className="text-xs text-muted-foreground">
-							{project.category}
+							{t.projects.categories[project.category]}
 							{project.year && ` · ${project.year}`}
 						</span>
 					</div>

@@ -1,8 +1,8 @@
-export type Category = "Todos" | "Pessoais" | "Trabalho" | "Freelance" | "Estudos";
+export type Category = "All" | "Personal" | "Work" | "Freelance" | "Studies";
 
 export interface Project {
 	name: string;
-	category: Exclude<Category, "Todos">;
+	category: Exclude<Category, "All">;
 	year: number | null;
 	repo: string | null;
 	stack: string[];
