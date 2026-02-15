@@ -17,7 +17,7 @@ export function SocialLink({ href, label, icon }: SocialLinkProps) {
 			className="hover:text-muted-foreground transition-colors"
 			aria-label={label}
 		>
-			<HugeiconsIcon icon={icon} size={18} strokeWidth={2} aria-hidden="true" />
+			<HugeiconsIcon icon={icon} size={20} aria-hidden="true" />
 		</Link>
 	);
 }

@@ -28,8 +28,10 @@ export function ThemeSwitcher() {
 	};
 
 	const getIcon = () => {
-		if (theme === "light") return <HugeiconsIcon icon={Sun02Icon} size={18} strokeWidth={2} />;
-		if (theme === "dark") return <HugeiconsIcon icon={Moon02Icon} size={18} strokeWidth={2} />;
+		if (theme === "light")
+			return <HugeiconsIcon icon={Sun02Icon} size={18} strokeWidth={2} />;
+		if (theme === "dark")
+			return <HugeiconsIcon icon={Moon02Icon} size={18} strokeWidth={2} />;
 		return <HugeiconsIcon icon={ComputerIcon} size={18} strokeWidth={2} />;
 	};
 

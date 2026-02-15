@@ -82,7 +82,7 @@ export function Pagination({
 	const canGoNext = currentPage < totalPages;
 
 	return (
-		<div className="flex items-center justify-between py-6">
+		<div className="flex flex-col sm:flex-row items-center sm:justify-between gap-4 py-6">
 			<div className="flex items-center gap-3">
 				<span className="text-sm text-muted-foreground">
 					{t.ui.pagination.showing} {startItem}-{endItem}{" "}
@@ -111,7 +111,7 @@ export function Pagination({
 
 			<nav role="navigation" aria-label="pagination">
 				<ul className="flex flex-row items-center gap-1">
-					<li>
+					<li className="hidden sm:block">
 						<GlowButton
 							variant="secondary"
 							size="icon"
@@ -167,7 +167,7 @@ export function Pagination({
 						</GlowButton>
 					</li>
 
-					<li>
+					<li className="hidden sm:block">
 						<GlowButton
 							variant="secondary"
 							size="icon"

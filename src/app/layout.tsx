@@ -17,16 +17,16 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="pt-BR" suppressHydrationWarning={true}>
+		<html lang="pt-BR" suppressHydrationWarning={true} className="antialiased">
 			<body>
 				<Providers>
 					<TooltipProvider>
 						<div className="h-screen flex flex-col bg-background text-foreground selection:bg-primary/10 transition-colors duration-300 overflow-auto">
-						<Header />
+							<Header />
 
-						<main className="flex-1 flex flex-col">{children}</main>
+							<main className="flex-1 flex flex-col">{children}</main>
 
-						<Footer />
+							<Footer />
 						</div>
 					</TooltipProvider>
 				</Providers>

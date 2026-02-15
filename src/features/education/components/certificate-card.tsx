@@ -14,8 +14,8 @@ export function CertificateCard({ title, image, url, skills }: Certificate) {
 		<div className="flex flex-col gap-3 rounded-lg border border-border bg-white dark:bg-muted/30 p-3">
 			<span className="text-sm font-medium text-foreground/80">{title}</span>
 
-			<div className="flex gap-4">
-				<div className="relative w-70 shrink-0 aspect-[1.414/1] rounded-md overflow-hidden border border-border">
+			<div className="flex flex-col sm:flex-row gap-4">
+				<div className="relative w-full sm:w-70 shrink-0 aspect-[1.414/1] rounded-md overflow-hidden border border-border">
 					<Image src={image} alt={title} fill className="object-cover" />
 				</div>
 

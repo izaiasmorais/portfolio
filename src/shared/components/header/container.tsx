@@ -7,15 +7,8 @@ import { LanguageSwitcher } from "@/shared/i18n/language-switcher";
 import { useLanguage } from "@/shared/i18n/use-language";
 import { GlowButton } from "@/shared/components/glow-button";
 import { cn } from "@/shared/utils/cn";
-
-const navPaths = [
-	{ key: "home" as const, path: "/" },
-	{ key: "experience" as const, path: "/experiencia" },
-	{ key: "education" as const, path: "/formacao" },
-	{ key: "skills" as const, path: "/habilidades" },
-	{ key: "projects" as const, path: "/projetos" },
-	{ key: "contact" as const, path: "/contato" },
-];
+import { navPaths } from "./mocks";
+import { MobileNav } from "./mobile-nav";
 
 export function Header() {
 	const pathname = usePathname();
@@ -50,13 +43,16 @@ export function Header() {
 
 				<div className="flex items-center gap-3">
 					<LanguageSwitcher />
+
 					<ThemeSwitcher />
 
-					<GlowButton asChild>
+					<GlowButton asChild className="hidden md:inline-flex">
 						<Link href="#" className="text-xs">
 							{t.ui.header.resume}
 						</Link>
 					</GlowButton>
+
+					<MobileNav />
 				</div>
 			</div>
 		</header>
