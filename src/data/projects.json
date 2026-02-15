@@ -1,0 +1,338 @@
+[
+	{
+		"name": "API DE SINCRONIZAÇÃO",
+		"category": "Trabalho",
+		"year": null,
+		"repo": null,
+		"stack": ["Fastify", "Node.js", "Prisma", "Vitest"],
+		"thumb": ""
+	},
+	{
+		"name": "API ESCRIVÃO",
+		"category": "Trabalho",
+		"year": 2025,
+		"repo": null,
+		"stack": ["Langchain", "Langgraph", "Python", "WhisperX"],
+		"thumb": ""
+	},
+	{
+		"name": "CERC",
+		"category": "Pessoais",
+		"year": null,
+		"repo": null,
+		"stack": ["Next.js"],
+		"thumb": ""
+	},
+	{
+		"name": "COMPEX JR",
+		"category": "Estudos",
+		"year": null,
+		"repo": null,
+		"stack": [],
+		"thumb": ""
+	},
+	{
+		"name": "DEVSTORE",
+		"category": "Estudos",
+		"year": 2024,
+		"repo": "https://github.com/izaiasmorais/devstore",
+		"stack": ["Next.js"],
+		"thumb": ""
+	},
+	{
+		"name": "EZBLOG",
+		"category": "Pessoais",
+		"year": null,
+		"repo": null,
+		"stack": [],
+		"thumb": ""
+	},
+	{
+		"name": "EZMONEY",
+		"category": "Pessoais",
+		"year": 2025,
+		"repo": null,
+		"stack": ["Drizzle", "Fastify", "Next.js", "Prisma"],
+		"thumb": ""
+	},
+	{
+		"name": "FASTAPI-BOILERPLATE",
+		"category": "Trabalho",
+		"year": 2025,
+		"repo": null,
+		"stack": ["Next.js"],
+		"thumb": ""
+	},
+	{
+		"name": "GOV CHAT",
+		"category": "Trabalho",
+		"year": 2025,
+		"repo": null,
+		"stack": ["VueJS"],
+		"thumb": ""
+	},
+	{
+		"name": "IGNITE 2021 | DASHGO",
+		"category": "Estudos",
+		"year": null,
+		"repo": null,
+		"stack": [],
+		"thumb": ""
+	},
+	{
+		"name": "IGNITE 2021 | IGNEWS",
+		"category": "Estudos",
+		"year": null,
+		"repo": null,
+		"stack": [],
+		"thumb": ""
+	},
+	{
+		"name": "IGNITE 2022 | COFFEE DELIVERY",
+		"category": "Estudos",
+		"year": null,
+		"repo": null,
+		"stack": ["ReactJS"],
+		"thumb": ""
+	},
+	{
+		"name": "IGNITE 2022 | DTMONEY",
+		"category": "Estudos",
+		"year": null,
+		"repo": null,
+		"stack": ["ReactJS"],
+		"thumb": ""
+	},
+	{
+		"name": "IGNITE 2022 | GITHUB BLOG",
+		"category": "Estudos",
+		"year": null,
+		"repo": null,
+		"stack": ["ReactJS"],
+		"thumb": ""
+	},
+	{
+		"name": "IGNITE 2022 | IGNITE TIMER",
+		"category": "Estudos",
+		"year": 2024,
+		"repo": "https://github.com/izaiasmorais/ignite-timer",
+		"stack": ["ReactJS"],
+		"thumb": ""
+	},
+	{
+		"name": "IGNITE 2022 | PIZZA SHOP",
+		"category": "Estudos",
+		"year": null,
+		"repo": null,
+		"stack": ["ReactJS"],
+		"thumb": ""
+	},
+	{
+		"name": "IGNITE 2022 | TO DO",
+		"category": "Estudos",
+		"year": null,
+		"repo": null,
+		"stack": ["ReactJS"],
+		"thumb": ""
+	},
+	{
+		"name": "IMÓVEIS PIAUÍ",
+		"category": "Trabalho",
+		"year": 2025,
+		"repo": null,
+		"stack": ["Next.js"],
+		"thumb": ""
+	},
+	{
+		"name": "LEGIA",
+		"category": "Trabalho",
+		"year": 2025,
+		"repo": null,
+		"stack": ["Next.js"],
+		"thumb": ""
+	},
+	{
+		"name": "MONITORA ATB",
+		"category": "Estudos",
+		"year": null,
+		"repo": null,
+		"stack": ["ReactJS"],
+		"thumb": ""
+	},
+	{
+		"name": "NEST JS CLEAN ARC TEMPLATE",
+		"category": "Pessoais",
+		"year": null,
+		"repo": null,
+		"stack": ["NestJS", "Prisma"],
+		"thumb": ""
+	},
+	{
+		"name": "NEW PORTFOLIO",
+		"category": "Pessoais",
+		"year": null,
+		"repo": null,
+		"stack": [],
+		"thumb": ""
+	},
+	{
+		"name": "NEXT JS BOILERPLATE",
+		"category": "Trabalho",
+		"year": 2025,
+		"repo": null,
+		"stack": ["FastAPI", "Next.js", "Python"],
+		"thumb": ""
+	},
+	{
+		"name": "NLW | COPA",
+		"category": "Estudos",
+		"year": null,
+		"repo": null,
+		"stack": [],
+		"thumb": ""
+	},
+	{
+		"name": "NLW | E-SPORTS",
+		"category": "Estudos",
+		"year": null,
+		"repo": null,
+		"stack": [],
+		"thumb": ""
+	},
+	{
+		"name": "NLW | SETUP",
+		"category": "Estudos",
+		"year": null,
+		"repo": null,
+		"stack": [],
+		"thumb": ""
+	},
+	{
+		"name": "NSPEDIDOS",
+		"category": "Trabalho",
+		"year": null,
+		"repo": null,
+		"stack": ["ReactJS"],
+		"thumb": ""
+	},
+	{
+		"name": "PDV",
+		"category": "Pessoais",
+		"year": 2025,
+		"repo": null,
+		"stack": ["Fastify", "Next.js", "Node.js", "Prisma", "Vitest"],
+		"thumb": ""
+	},
+	{
+		"name": "PHANOX",
+		"category": "Pessoais",
+		"year": null,
+		"repo": null,
+		"stack": [],
+		"thumb": ""
+	},
+	{
+		"name": "PLASEG",
+		"category": "Trabalho",
+		"year": 2025,
+		"repo": null,
+		"stack": ["Fastify", "Node.js", "Prisma", "ReactJS"],
+		"thumb": ""
+	},
+	{
+		"name": "PSIFORM | FORMS",
+		"category": "Freelance",
+		"year": null,
+		"repo": null,
+		"stack": [],
+		"thumb": ""
+	},
+	{
+		"name": "PSIFORM | HOME",
+		"category": "Freelance",
+		"year": null,
+		"repo": null,
+		"stack": [],
+		"thumb": ""
+	},
+	{
+		"name": "PSIWAY",
+		"category": "Freelance",
+		"year": null,
+		"repo": null,
+		"stack": [],
+		"thumb": ""
+	},
+	{
+		"name": "RETAGUARDA | CUPOM",
+		"category": "Freelance",
+		"year": null,
+		"repo": null,
+		"stack": [],
+		"thumb": ""
+	},
+	{
+		"name": "RETAGUARDA | FIDELIDADE",
+		"category": "Freelance",
+		"year": null,
+		"repo": null,
+		"stack": [],
+		"thumb": ""
+	},
+	{
+		"name": "RETAGUARDA WEB",
+		"category": "Trabalho",
+		"year": null,
+		"repo": null,
+		"stack": ["ReactJS"],
+		"thumb": ""
+	},
+	{
+		"name": "RISULTAR",
+		"category": "Pessoais",
+		"year": 2025,
+		"repo": null,
+		"stack": ["GO", "Next.js"],
+		"thumb": ""
+	},
+	{
+		"name": "SEED FRONTEND REACT",
+		"category": "Estudos",
+		"year": null,
+		"repo": null,
+		"stack": ["ReactJS"],
+		"thumb": ""
+	},
+	{
+		"name": "SPIKE",
+		"category": "Pessoais",
+		"year": 2025,
+		"repo": null,
+		"stack": ["Fastify", "Next.js", "Node.js", "Prisma"],
+		"thumb": ""
+	},
+	{
+		"name": "STEWARDSHIP | API DE PRESCRIÇÕES",
+		"category": "Estudos",
+		"year": null,
+		"repo": null,
+		"stack": ["Node.js", "Prisma"],
+		"thumb": ""
+	},
+	{
+		"name": "STEWARDSHIP | GUIA ANTIMICROBIANO",
+		"category": "Estudos",
+		"year": null,
+		"repo": null,
+		"stack": ["React Native"],
+		"thumb": ""
+	},
+	{
+		"name": "SUMMARY",
+		"category": "Estudos",
+		"year": null,
+		"repo": null,
+		"stack": ["ReactJS"],
+		"thumb": ""
+	}
+]
