@@ -6,10 +6,11 @@ export type Locale = "pt-BR" | "en";
 
 export type SkillCategoryKey =
 	| "languages"
-	| "frameworks"
+	| "frontend"
 	| "backend"
-	| "tools"
-	| "devops";
+	| "databases"
+	| "devops"
+	| "tools";
 
 export interface Dictionary {
 	ui: {

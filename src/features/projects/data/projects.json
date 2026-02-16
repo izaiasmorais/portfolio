@@ -457,5 +457,14 @@
 		"live": null,
 		"stack": ["ReactJS"],
 		"thumb": "/projects/summary.png"
+	},
+	{
+		"name": "Webshot",
+		"category": "Personal",
+		"year": 2026,
+		"repo": null,
+		"live": "https://webshot.up.railway.app/",
+		"stack": [],
+		"thumb": "/projects/webshot.png"
 	}
 ]

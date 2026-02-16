@@ -31,6 +31,13 @@ src/features/<feature>/
 - Usar `cn()` de `@/shared/utils/cn` para classes condicionais
 - Ícones via `@hugeicons/react` com `@hugeicons/core-free-icons`
 
+## i18n
+
+- Traduções ficam em `src/shared/i18n/locales/{en,pt-BR}/`
+- Tipagens de i18n (ex: `SkillCategoryKey`) ficam em `src/shared/i18n/types.ts`
+- Ao adicionar/remover categorias, labels ou seções, **sempre atualizar**: o tipo em `types.ts`, o locale EN e o locale PT-BR
+- SVGs de skills ficam em `public/skills/`. Para ícones com problemas em dark mode, criar versões `-light.svg` e `-dark.svg`
+
 ## Geral
 
 - Linguagem: TypeScript strict, sem `any`

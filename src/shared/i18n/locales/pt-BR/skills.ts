@@ -4,10 +4,12 @@ export const skills: Dictionary["skills"] = {
 	title: "Habilidades",
 	subtitle: "Tecnologias que possuo experiência",
 	categories: {
-		languages: "<LINGUAGENS/>",
-		frameworks: "<FRAMEWORKS/>",
-		backend: "<BACKEND/>",
-		tools: "<FERRAMENTAS/>",
-		devops: "<DEV OPS/>",
+		languages: "LINGUAGENS",
+		frontend: "FRONTEND",
+		backend: "BACKEND",
+		databases: "BANCOS DE DADOS",
+
+		devops: "DEVOPS & CLOUD",
+		tools: "FERRAMENTAS",
 	},
 };
