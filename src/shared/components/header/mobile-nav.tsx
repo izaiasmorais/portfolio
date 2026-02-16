@@ -10,6 +10,7 @@ import { useLanguage } from "@/shared/i18n/use-language";
 import { GlowButton } from "@/shared/components/glow-button";
 import { cn } from "@/shared/utils/cn";
 import { navPaths } from "./mocks";
+import { ResumeDropdown } from "./resume-dropdown";
 
 export function MobileNav() {
 	const [open, setOpen] = useState(false);
@@ -76,15 +77,7 @@ export function MobileNav() {
 					</nav>
 
 					<div className="flex items-center justify-center gap-3 px-6 py-8">
-						<GlowButton asChild>
-							<Link
-								href="#"
-								onClick={() => setOpen(false)}
-								className="text-sm"
-							>
-								{t.ui.header.resume}
-							</Link>
-						</GlowButton>
+						<ResumeDropdown />
 					</div>
 				</Dialog.Content>
 			</Dialog.Portal>

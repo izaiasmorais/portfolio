@@ -5,10 +5,10 @@ import { usePathname } from "next/navigation";
 import { ThemeSwitcher } from "@/shared/components/header/theme-switcher";
 import { LanguageSwitcher } from "@/shared/i18n/language-switcher";
 import { useLanguage } from "@/shared/i18n/use-language";
-import { GlowButton } from "@/shared/components/glow-button";
 import { cn } from "@/shared/utils/cn";
 import { navPaths } from "./mocks";
 import { MobileNav } from "./mobile-nav";
+import { ResumeDropdown } from "./resume-dropdown";
 
 export function Header() {
 	const pathname = usePathname();
@@ -46,11 +46,7 @@ export function Header() {
 
 					<ThemeSwitcher />
 
-					<GlowButton asChild className="hidden md:inline-flex">
-						<Link href="#" className="text-xs">
-							{t.ui.header.resume}
-						</Link>
-					</GlowButton>
+					<ResumeDropdown className="hidden md:inline-flex" />
 
 					<MobileNav />
 				</div>

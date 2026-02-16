@@ -23,7 +23,7 @@ src/features/<feature>/
 - Cada componente em seu próprio arquivo
 - Exportar componentes como named exports (não default)
 - `Button` de `@/shared/components/ui/button` sempre deve ter `cursor-pointer`
-- Componentes shadcn-ui ficam em `src/shared/components/ui/`
+- Sempre usar componentes shadcn-ui para elementos de UI (dropdown, dialog, tooltip, etc.) — ficam em `src/shared/components/ui/`
 
 ## Estilização
 

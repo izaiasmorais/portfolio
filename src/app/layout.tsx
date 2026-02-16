@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Header } from "@/shared/components/header/container";
 import { Footer } from "@/shared/components/footer/container";
 import { TooltipProvider } from "@/shared/components/ui/tooltip";
+import { Toaster } from "@/shared/components/ui/sonner";
 import Providers from "./providers";
 import "./globals.css";
 
@@ -28,6 +29,7 @@ export default function RootLayout({
 
 							<Footer />
 						</div>
+						<Toaster />
 					</TooltipProvider>
 				</Providers>
 			</body>

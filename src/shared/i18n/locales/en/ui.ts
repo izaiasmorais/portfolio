@@ -11,6 +11,10 @@ export const ui: Dictionary["ui"] = {
 			contact: "Contact",
 		},
 		resume: "Resume",
+		resumeOptions: {
+			portuguese: "Portuguese",
+			english: "English",
+		},
 	},
 	footer: {
 		location: "Teresina, PI",
@@ -62,5 +66,16 @@ export const ui: Dictionary["ui"] = {
 		message: "Your message",
 		messagePlaceholder: "Write your message here...",
 		submit: "Send message",
+		sending: "Sending...",
+		success: "Message sent successfully!",
+		error: "Failed to send message. Please try again.",
+		validation: {
+			nameRequired: "Name is required.",
+			nameMin: "Name must be at least 2 characters.",
+			emailRequired: "Email is required.",
+			emailInvalid: "Please enter a valid email address.",
+			messageRequired: "Message is required.",
+			messageMin: "Message must be at least 10 characters.",
+		},
 	},
 };

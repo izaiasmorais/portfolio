@@ -24,6 +24,10 @@ export interface Dictionary {
 				contact: string;
 			};
 			resume: string;
+			resumeOptions: {
+				portuguese: string;
+				english: string;
+			};
 		};
 		footer: {
 			location: string;
@@ -67,6 +71,17 @@ export interface Dictionary {
 			message: string;
 			messagePlaceholder: string;
 			submit: string;
+			sending: string;
+			success: string;
+			error: string;
+			validation: {
+				nameRequired: string;
+				nameMin: string;
+				emailRequired: string;
+				emailInvalid: string;
+				messageRequired: string;
+				messageMin: string;
+			};
 		};
 	};
 	home: {
