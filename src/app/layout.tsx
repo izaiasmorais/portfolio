@@ -9,6 +9,9 @@ import "./globals.css"
 export const metadata: Metadata = {
 	title: "Izaias Morais",
 	description: "Portfolio de Izaias Morais - Design Engineer & Fullstack Developer",
+	icons: {
+		icon: "/favicon/izaiasmorais.svg",
+	},
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
