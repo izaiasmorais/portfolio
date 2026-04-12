@@ -1,25 +1,22 @@
-"use client";
+"use client"
 
-import { useMemo, useTransition } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { toast } from "sonner";
-import { Form } from "@/shared/components/ui/form";
-import { GlowButton } from "@/shared/components/glow-button";
-import { useLanguage } from "@/shared/i18n/use-language";
-import { createContactSchema } from "../data";
-import { sendContactEmail } from "../actions/send-email";
-import { ContactFormFields } from "./contact-form-fields";
-import type { ContactFormValues } from "../types";
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useMemo, useTransition } from "react"
+import { useForm } from "react-hook-form"
+import { toast } from "sonner"
+import { GlowButton } from "@/shared/components/glow-button"
+import { Form } from "@/shared/components/ui/form"
+import { useLanguage } from "@/shared/i18n/use-language"
+import { sendContactEmail } from "../actions/send-email"
+import { createContactSchema } from "../data"
+import type { ContactFormValues } from "../types"
+import { ContactFormFields } from "./contact-form-fields"
 
 export function ContactForm() {
-	const { t } = useLanguage();
-	const [isPending, startTransition] = useTransition();
+	const { t } = useLanguage()
+	const [isPending, startTransition] = useTransition()
 
-	const schema = useMemo(
-		() => createContactSchema(t.ui.form.validation),
-		[t],
-	);
+	const schema = useMemo(() => createContactSchema(t.ui.form.validation), [t])
 
 	const form = useForm<ContactFormValues>({
 		resolver: zodResolver(schema),
@@ -27,33 +24,29 @@ export function ContactForm() {
 			name: "",
 			email: "",
 			message: "",
+			website: "",
 		},
-	});
+	})
 
 	function onSubmit(values: ContactFormValues) {
 		startTransition(async () => {
-			const result = await sendContactEmail(values);
+			const result = await sendContactEmail(values)
 
 			if (result.success) {
-				toast.success(t.ui.form.success);
-				form.reset();
+				toast.success(t.ui.form.success)
+				form.reset()
 			} else {
-				toast.error(t.ui.form.error);
+				toast.error(t.ui.form.error)
 			}
-		});
+		})
 	}
 
 	return (
 		<div className="w-full bg-card border border-border p-8 rounded-2xl">
-			<h3 className="text-xl font-bold text-foreground mb-6">
-				{t.ui.form.title}
-			</h3>
+			<h3 className="text-xl font-bold text-foreground mb-6">{t.ui.form.title}</h3>
 
 			<Form {...form}>
-				<form
-					onSubmit={form.handleSubmit(onSubmit)}
-					className="flex flex-col gap-5"
-				>
+				<form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-5">
 					<ContactFormFields control={form.control} formLabels={t.ui.form} />
 
 					<GlowButton
@@ -66,5 +59,5 @@ export function ContactForm() {
 				</form>
 			</Form>
 		</div>
-	);
+	)
 }

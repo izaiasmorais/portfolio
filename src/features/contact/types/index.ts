@@ -1,9 +1,10 @@
 export interface ContactFormValues {
-	name: string;
-	email: string;
-	message: string;
+	name: string
+	email: string
+	message: string
+	website?: string
 }
 
 export interface SendEmailResult {
-	success: boolean;
+	success: boolean
 }

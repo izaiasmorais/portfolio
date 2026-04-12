@@ -1,25 +1,22 @@
-import type { Control } from "react-hook-form";
+import type { Control } from "react-hook-form"
 import {
+	FormControl,
 	FormField,
 	FormItem,
 	FormLabel,
-	FormControl,
 	FormMessage,
-} from "@/shared/components/ui/form";
-import { Input } from "@/shared/components/ui/input";
-import { Textarea } from "@/shared/components/ui/textarea";
-import type { ContactFormValues } from "../types";
-import type { Dictionary } from "@/shared/i18n/types";
+} from "@/shared/components/ui/form"
+import { Input } from "@/shared/components/ui/input"
+import { Textarea } from "@/shared/components/ui/textarea"
+import type { Dictionary } from "@/shared/i18n/types"
+import type { ContactFormValues } from "../types"
 
 interface ContactFormFieldsProps {
-	control: Control<ContactFormValues>;
-	formLabels: Dictionary["ui"]["form"];
+	control: Control<ContactFormValues>
+	formLabels: Dictionary["ui"]["form"]
 }
 
-export function ContactFormFields({
-	control,
-	formLabels,
-}: ContactFormFieldsProps) {
+export function ContactFormFields({ control, formLabels }: ContactFormFieldsProps) {
 	return (
 		<>
 			<FormField
@@ -31,11 +28,7 @@ export function ContactFormFields({
 							{formLabels.name}
 						</FormLabel>
 						<FormControl>
-							<Input
-								type="text"
-								placeholder={formLabels.namePlaceholder}
-								{...field}
-							/>
+							<Input type="text" placeholder={formLabels.namePlaceholder} {...field} />
 						</FormControl>
 						<FormMessage />
 					</FormItem>
@@ -51,11 +44,7 @@ export function ContactFormFields({
 							{formLabels.email}
 						</FormLabel>
 						<FormControl>
-							<Input
-								type="email"
-								placeholder={formLabels.emailPlaceholder}
-								{...field}
-							/>
+							<Input type="email" placeholder={formLabels.emailPlaceholder} {...field} />
 						</FormControl>
 						<FormMessage />
 					</FormItem>
@@ -82,6 +71,19 @@ export function ContactFormFields({
 					</FormItem>
 				)}
 			/>
+
+			<FormField
+				control={control}
+				name="website"
+				render={({ field }) => (
+					<FormItem className="absolute opacity-0 -z-10 h-0 w-0 overflow-hidden" aria-hidden="true">
+						<FormLabel>Website</FormLabel>
+						<FormControl>
+							<Input type="text" tabIndex={-1} autoComplete="off" {...field} />
+						</FormControl>
+					</FormItem>
+				)}
+			/>
 		</>
-	);
+	)
 }

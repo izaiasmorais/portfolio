@@ -1,4 +1,4 @@
-import type { Dictionary } from "../../types";
+import type { Dictionary } from "../../types"
 
 export const ui: Dictionary["ui"] = {
 	header: {
@@ -72,10 +72,12 @@ export const ui: Dictionary["ui"] = {
 		validation: {
 			nameRequired: "Nome é obrigatório.",
 			nameMin: "Nome deve ter pelo menos 2 caracteres.",
+			nameMax: "Nome deve ter no máximo 100 caracteres.",
 			emailRequired: "Email é obrigatório.",
 			emailInvalid: "Insira um endereço de email válido.",
 			messageRequired: "Mensagem é obrigatória.",
 			messageMin: "Mensagem deve ter pelo menos 10 caracteres.",
+			messageMax: "Mensagem deve ter no máximo 5000 caracteres.",
 		},
 	},
-};
+}

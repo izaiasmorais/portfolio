@@ -1,8 +1,8 @@
-import type { Job, WorkType } from "@/features/experience/types";
-import type { Institution, EducationType } from "@/features/education/types";
-import type { Category } from "@/features/projects/types";
+import type { EducationType, Institution } from "@/features/education/types"
+import type { Job, WorkType } from "@/features/experience/types"
+import type { Category } from "@/features/projects/types"
 
-export type Locale = "pt-BR" | "en";
+export type Locale = "pt-BR" | "en"
 
 export type SkillCategoryKey =
 	| "languages"
@@ -10,108 +10,110 @@ export type SkillCategoryKey =
 	| "backend"
 	| "databases"
 	| "devops"
-	| "tools";
+	| "tools"
 
 export interface Dictionary {
 	ui: {
 		header: {
 			nav: {
-				home: string;
-				experience: string;
-				education: string;
-				skills: string;
-				projects: string;
-				contact: string;
-			};
-			resume: string;
+				home: string
+				experience: string
+				education: string
+				skills: string
+				projects: string
+				contact: string
+			}
+			resume: string
 			resumeOptions: {
-				portuguese: string;
-				english: string;
-			};
-		};
+				portuguese: string
+				english: string
+			}
+		}
 		footer: {
-			location: string;
+			location: string
 			socialLabels: {
-				whatsapp: string;
-				linkedin: string;
-				instagram: string;
-				twitter: string;
-				github: string;
-				email: string;
-			};
-			ariaLabel: string;
-		};
+				whatsapp: string
+				linkedin: string
+				instagram: string
+				twitter: string
+				github: string
+				email: string
+			}
+			ariaLabel: string
+		}
 		pagination: {
-			showing: string;
-			of: string;
-			item: string;
-			items: string;
-			perPage: string;
-			firstPage: string;
-			lastPage: string;
-			previousPage: string;
-			nextPage: string;
-			goToPage: string;
-		};
-		workTypes: Record<WorkType, string>;
-		educationTypes: Record<EducationType, string>;
+			showing: string
+			of: string
+			item: string
+			items: string
+			perPage: string
+			firstPage: string
+			lastPage: string
+			previousPage: string
+			nextPage: string
+			goToPage: string
+		}
+		workTypes: Record<WorkType, string>
+		educationTypes: Record<EducationType, string>
 		certificate: {
-			skills: string;
-			workload: string;
-			workloadValue: string;
-			contentType: string;
-			showCredential: string;
-		};
+			skills: string
+			workload: string
+			workloadValue: string
+			contentType: string
+			showCredential: string
+		}
 		form: {
-			title: string;
-			name: string;
-			namePlaceholder: string;
-			email: string;
-			emailPlaceholder: string;
-			message: string;
-			messagePlaceholder: string;
-			submit: string;
-			sending: string;
-			success: string;
-			error: string;
+			title: string
+			name: string
+			namePlaceholder: string
+			email: string
+			emailPlaceholder: string
+			message: string
+			messagePlaceholder: string
+			submit: string
+			sending: string
+			success: string
+			error: string
 			validation: {
-				nameRequired: string;
-				nameMin: string;
-				emailRequired: string;
-				emailInvalid: string;
-				messageRequired: string;
-				messageMin: string;
-			};
-		};
-	};
+				nameRequired: string
+				nameMin: string
+				nameMax: string
+				emailRequired: string
+				emailInvalid: string
+				messageRequired: string
+				messageMin: string
+				messageMax: string
+			}
+		}
+	}
 	home: {
-		bio: string;
-	};
+		bio: string
+	}
 	experience: {
-		title: string;
-		subtitle: string;
-		jobs: Job[];
-	};
+		title: string
+		subtitle: string
+		jobs: Job[]
+	}
 	education: {
-		title: string;
-		subtitle: string;
-		educationHeading: string;
-		coursesHeading: string;
-		institutions: Institution[];
-		courses: Institution[];
-	};
+		title: string
+		subtitle: string
+		educationHeading: string
+		coursesHeading: string
+		institutions: Institution[]
+		courses: Institution[]
+	}
 	skills: {
-		title: string;
-		subtitle: string;
-		categories: Record<SkillCategoryKey, string>;
-	};
+		title: string
+		subtitle: string
+		categories: Record<SkillCategoryKey, string>
+	}
 	projects: {
-		title: string;
-		subtitle: string;
-		categories: Record<Category, string>;
-	};
+		title: string
+		subtitle: string
+		categories: Record<Category, string>
+	}
 	contact: {
-		title: string;
-		subtitle: string;
-	};
+		title: string
+		subtitle: string
+	}
 }
