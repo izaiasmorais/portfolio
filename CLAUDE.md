@@ -42,5 +42,5 @@ src/features/<feature>/
 
 - Linguagem: TypeScript strict, sem `any`
 - Sem comentários no código
-- Package manager: pnpm
+- Package manager: bun
 - Sem "Co-Authored-By" ou assinaturas em commits
