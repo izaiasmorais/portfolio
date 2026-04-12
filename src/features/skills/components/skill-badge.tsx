@@ -1,5 +1,5 @@
-import type { Skill } from "../types";
-import { SkillIcon } from "./skill-icon";
+import type { Skill } from "../types"
+import { SkillIcon } from "./skill-icon"
 
 export function SkillBadge({ name, icon }: Skill) {
 	return (
@@ -7,5 +7,5 @@ export function SkillBadge({ name, icon }: Skill) {
 			<SkillIcon icon={icon} />
 			<span className="text-foreground">{name}</span>
 		</div>
-	);
+	)
 }

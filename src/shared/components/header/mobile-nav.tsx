@@ -1,31 +1,26 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { Dialog, VisuallyHidden } from "radix-ui";
-import { HugeiconsIcon } from "@hugeicons/react";
-import { Menu01Icon, Cancel01Icon } from "@hugeicons/core-free-icons";
-import { useLanguage } from "@/shared/i18n/use-language";
-import { GlowButton } from "@/shared/components/glow-button";
-import { cn } from "@/shared/utils/cn";
-import { navPaths } from "./mocks";
-import { ResumeDropdown } from "./resume-dropdown";
+import { Cancel01Icon, Menu01Icon } from "@hugeicons/core-free-icons"
+import { HugeiconsIcon } from "@hugeicons/react"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { Dialog, VisuallyHidden } from "radix-ui"
+import { useState } from "react"
+import { GlowButton } from "@/shared/components/glow-button"
+import { useLanguage } from "@/shared/i18n/use-language"
+import { cn } from "@/shared/utils/cn"
+import { navPaths } from "./mocks"
+import { ResumeDropdown } from "./resume-dropdown"
 
 export function MobileNav() {
-	const [open, setOpen] = useState(false);
-	const pathname = usePathname();
-	const { t } = useLanguage();
+	const [open, setOpen] = useState(false)
+	const pathname = usePathname()
+	const { t } = useLanguage()
 
 	return (
 		<Dialog.Root open={open} onOpenChange={setOpen}>
 			<Dialog.Trigger asChild>
-				<GlowButton
-					variant="secondary"
-					size="icon"
-					aria-label="Open menu"
-					className="md:hidden"
-				>
+				<GlowButton variant="secondary" size="icon" aria-label="Open menu" className="md:hidden">
 					<HugeiconsIcon icon={Menu01Icon} size={18} />
 				</GlowButton>
 			</Dialog.Trigger>
@@ -48,11 +43,7 @@ export function MobileNav() {
 						</Link>
 
 						<Dialog.Close asChild>
-							<GlowButton
-								variant="secondary"
-								size="icon"
-								aria-label="Close menu"
-							>
+							<GlowButton variant="secondary" size="icon" aria-label="Close menu">
 								<HugeiconsIcon icon={Cancel01Icon} size={18} />
 							</GlowButton>
 						</Dialog.Close>
@@ -82,5 +73,5 @@ export function MobileNav() {
 				</Dialog.Content>
 			</Dialog.Portal>
 		</Dialog.Root>
-	);
+	)
 }

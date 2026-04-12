@@ -1,20 +1,17 @@
-import Image from "next/image";
-import Link from "next/link";
-import { HugeiconsIcon } from "@hugeicons/react";
-import {
-	LinkSquare02Icon,
-	Globe02Icon,
-} from "@hugeicons/core-free-icons";
-import { useLanguage } from "@/shared/i18n/use-language";
-import type { Project } from "../types";
-import { TechBadges } from "./tech-badges";
+import { Globe02Icon, LinkSquare02Icon } from "@hugeicons/core-free-icons"
+import { HugeiconsIcon } from "@hugeicons/react"
+import Image from "next/image"
+import Link from "next/link"
+import { useLanguage } from "@/shared/i18n/use-language"
+import type { Project } from "../types"
+import { TechBadges } from "./tech-badges"
 
 interface ProjectCardProps {
-	project: Project;
+	project: Project
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
-	const { t } = useLanguage();
+	const { t } = useLanguage()
 
 	return (
 		<div className="group bg-card border border-border rounded-xl overflow-hidden hover:shadow-sm transition-all duration-300 flex flex-col">
@@ -56,9 +53,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
 			<div className="p-4 flex flex-col flex-1">
 				<div className="flex items-start justify-between mb-2">
 					<div className="flex flex-col min-w-0">
-						<h3 className="font-semibold text-foreground text-sm truncate pr-2">
-							{project.name}
-						</h3>
+						<h3 className="font-semibold text-foreground text-sm truncate pr-2">{project.name}</h3>
 						<span className="text-xs text-muted-foreground">
 							{t.projects.categories[project.category]}
 							{project.year && ` · ${project.year}`}
@@ -69,5 +64,5 @@ export function ProjectCard({ project }: ProjectCardProps) {
 				<TechBadges stack={project.stack} />
 			</div>
 		</div>
-	);
+	)
 }

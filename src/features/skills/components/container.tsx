@@ -1,19 +1,15 @@
-"use client";
+"use client"
 
-import { SectionContainer } from "@/shared/components/section-container";
-import { useLanguage } from "@/shared/i18n/use-language";
-import { categories } from "../data";
-import { SkillBadge } from "./skill-badge";
+import { SectionContainer } from "@/shared/components/section-container"
+import { useLanguage } from "@/shared/i18n/use-language"
+import { categories } from "../data"
+import { SkillBadge } from "./skill-badge"
 
 export function SkillsSection() {
-	const { t } = useLanguage();
+	const { t } = useLanguage()
 
 	return (
-		<SectionContainer
-			id="skills"
-			title={t.skills.title}
-			subtitle={t.skills.subtitle}
-		>
+		<SectionContainer id="skills" title={t.skills.title} subtitle={t.skills.subtitle}>
 			<div className="flex flex-col gap-10">
 				{categories.map((category) => (
 					<div key={category.key} className="flex flex-col gap-4">
@@ -29,5 +25,5 @@ export function SkillsSection() {
 				))}
 			</div>
 		</SectionContainer>
-	);
+	)
 }

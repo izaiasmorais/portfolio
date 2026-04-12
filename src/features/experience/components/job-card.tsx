@@ -1,19 +1,17 @@
-import Image from "next/image";
-import Link from "next/link";
-import type { Job } from "../types";
-import { WorkTypeBadge } from "./work-type-badge";
+import Image from "next/image"
+import Link from "next/link"
+import type { Job } from "../types"
+import { WorkTypeBadge } from "./work-type-badge"
 
 interface JobCardProps {
-	job: Job;
-	isLast: boolean;
+	job: Job
+	isLast: boolean
 }
 
 export function JobCard({ job, isLast }: JobCardProps) {
 	return (
 		<div className="flex gap-6 md:gap-8 group relative pb-12 last:pb-0">
-			{!isLast && (
-				<div className="absolute left-6 top-12 bottom-0 w-px bg-border" />
-			)}
+			{!isLast && <div className="absolute left-6 top-12 bottom-0 w-px bg-border" />}
 
 			<div className="shrink-0 relative">
 				<div
@@ -72,5 +70,5 @@ export function JobCard({ job, isLast }: JobCardProps) {
 				))}
 			</div>
 		</div>
-	);
+	)
 }

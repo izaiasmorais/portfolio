@@ -1,4 +1,4 @@
-import type { Dictionary } from "../../types";
+import type { Dictionary } from "../../types"
 
 export const skills: Dictionary["skills"] = {
 	title: "Skills",
@@ -12,4 +12,4 @@ export const skills: Dictionary["skills"] = {
 		devops: "DEVOPS & CLOUD",
 		tools: "TOOLS",
 	},
-};
+}

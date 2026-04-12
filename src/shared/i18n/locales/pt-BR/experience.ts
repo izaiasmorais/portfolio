@@ -1,4 +1,4 @@
-import type { Dictionary } from "../../types";
+import type { Dictionary } from "../../types"
 
 export const experience: Dictionary["experience"] = {
 	title: "Experiência",
@@ -66,4 +66,4 @@ export const experience: Dictionary["experience"] = {
 			logoBg: "bg-[#752B94]",
 		},
 	],
-};
+}

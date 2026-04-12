@@ -1,12 +1,12 @@
 import {
-	Linkedin02Icon,
-	InstagramIcon,
 	GithubIcon,
-	WhatsappIcon,
+	InstagramIcon,
+	Linkedin02Icon,
 	Mail01Icon,
 	NewTwitterIcon,
-} from "@hugeicons/core-free-icons";
-import type { Dictionary } from "@/shared/i18n/types";
+	WhatsappIcon,
+} from "@hugeicons/core-free-icons"
+import type { Dictionary } from "@/shared/i18n/types"
 
 export function getSocialLinks(socialLabels: Dictionary["ui"]["footer"]["socialLabels"]) {
 	return [
@@ -40,5 +40,5 @@ export function getSocialLinks(socialLabels: Dictionary["ui"]["footer"]["socialL
 			label: socialLabels.email,
 			icon: Mail01Icon,
 		},
-	];
+	]
 }

@@ -1,22 +1,17 @@
-import type { Metadata } from "next";
-import { Header } from "@/shared/components/header/container";
-import { Footer } from "@/shared/components/footer/container";
-import { TooltipProvider } from "@/shared/components/ui/tooltip";
-import { Toaster } from "@/shared/components/ui/sonner";
-import Providers from "./providers";
-import "./globals.css";
+import type { Metadata } from "next"
+import { Footer } from "@/shared/components/footer/container"
+import { Header } from "@/shared/components/header/container"
+import { Toaster } from "@/shared/components/ui/sonner"
+import { TooltipProvider } from "@/shared/components/ui/tooltip"
+import Providers from "./providers"
+import "./globals.css"
 
 export const metadata: Metadata = {
 	title: "Izaias Morais",
-	description:
-		"Portfolio de Izaias Morais - Design Engineer & Fullstack Developer",
-};
+	description: "Portfolio de Izaias Morais - Design Engineer & Fullstack Developer",
+}
 
-export default function RootLayout({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="pt-BR" suppressHydrationWarning={true} className="antialiased">
 			<body>
@@ -34,5 +29,5 @@ export default function RootLayout({
 				</Providers>
 			</body>
 		</html>
-	);
+	)
 }

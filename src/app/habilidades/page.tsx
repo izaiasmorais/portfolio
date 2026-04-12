@@ -1,5 +1,5 @@
-import { SkillsSection } from "@/features/skills/components/container";
+import { SkillsSection } from "@/features/skills/components/container"
 
 export default function HabilidadesPage() {
-	return <SkillsSection />;
+	return <SkillsSection />
 }

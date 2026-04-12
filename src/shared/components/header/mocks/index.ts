@@ -5,4 +5,4 @@ export const navPaths = [
 	{ key: "skills" as const, path: "/habilidades" },
 	{ key: "projects" as const, path: "/projetos" },
 	{ key: "contact" as const, path: "/contato" },
-];
+]

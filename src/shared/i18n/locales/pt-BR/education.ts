@@ -1,4 +1,4 @@
-import type { Dictionary } from "../../types";
+import type { Dictionary } from "../../types"
 
 export const education: Dictionary["education"] = {
 	title: "Formação",
@@ -54,7 +54,8 @@ export const education: Dictionary["education"] = {
 							title: 'Certificado de Conclusão do Curso "ReactJS 2022"',
 							image: "/education/certificates/react-2022.png",
 							url: "https://app.rocketseat.com.br/certificates/5c987939-3fc7-4cf8-a706-6ef7b8814062",
-							skills: "Fundamentos do ReactJS, Criação de SPAs com ReactJS, Consumo de API e performance no ReactJS, Fundamentos do Next.js, Design System e Storybook e Criação de aplicação FullStack com NextJS.",
+							skills:
+								"Fundamentos do ReactJS, Criação de SPAs com ReactJS, Consumo de API e performance no ReactJS, Fundamentos do Next.js, Design System e Storybook e Criação de aplicação FullStack com NextJS.",
 						},
 					],
 				},
@@ -79,4 +80,4 @@ export const education: Dictionary["education"] = {
 			logoFill: true,
 		},
 	],
-};
+}

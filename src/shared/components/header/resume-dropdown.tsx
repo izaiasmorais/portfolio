@@ -1,34 +1,32 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import Link from "next/link";
-import { useLanguage } from "@/shared/i18n/use-language";
-import { GlowButton } from "@/shared/components/glow-button";
+import Image from "next/image"
+import Link from "next/link"
+import { GlowButton } from "@/shared/components/glow-button"
 import {
 	DropdownMenu,
-	DropdownMenuTrigger,
 	DropdownMenuContent,
 	DropdownMenuItem,
-} from "@/shared/components/ui/dropdown-menu";
+	DropdownMenuTrigger,
+} from "@/shared/components/ui/dropdown-menu"
+import { useLanguage } from "@/shared/i18n/use-language"
 
 const RESUME_LINKS = {
-	portuguese:
-		"https://drive.google.com/file/d/1R_d8wX4KnMfybElu7vtSwwF99axyrmXH/view?usp=sharing",
-	english:
-		"https://drive.google.com/file/d/1fm9AGJIVGyc87biqqEJT7HGv9wLyJ3WF/view?usp=sharing",
-};
+	portuguese: "https://drive.google.com/file/d/1R_d8wX4KnMfybElu7vtSwwF99axyrmXH/view?usp=sharing",
+	english: "https://drive.google.com/file/d/1fm9AGJIVGyc87biqqEJT7HGv9wLyJ3WF/view?usp=sharing",
+}
 
 const RESUME_OPTIONS = [
 	{ key: "portuguese" as const, flag: "/flags/br.svg" },
 	{ key: "english" as const, flag: "/flags/us.svg" },
-];
+]
 
 interface ResumeDropdownProps {
-	className?: string;
+	className?: string
 }
 
 export function ResumeDropdown({ className }: ResumeDropdownProps) {
-	const { t } = useLanguage();
+	const { t } = useLanguage()
 
 	return (
 		<DropdownMenu>
@@ -47,18 +45,12 @@ export function ResumeDropdown({ className }: ResumeDropdownProps) {
 							rel="noopener noreferrer"
 							className="cursor-pointer"
 						>
-							<Image
-								src={option.flag}
-								alt=""
-								width={20}
-								height={14}
-								className="rounded-[2px]"
-							/>
+							<Image src={option.flag} alt="" width={20} height={14} className="rounded-[2px]" />
 							{t.ui.header.resumeOptions[option.key]}
 						</Link>
 					</DropdownMenuItem>
 				))}
 			</DropdownMenuContent>
 		</DropdownMenu>
-	);
+	)
 }

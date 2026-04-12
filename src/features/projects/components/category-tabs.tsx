@@ -1,22 +1,23 @@
-"use client";
+"use client"
 
-import { cn } from "@/shared/utils/cn";
-import { useLanguage } from "@/shared/i18n/use-language";
-import type { Category } from "../types";
-import { categoryList } from "../data";
+import { useLanguage } from "@/shared/i18n/use-language"
+import { cn } from "@/shared/utils/cn"
+import { categoryList } from "../data"
+import type { Category } from "../types"
 
 interface CategoryTabsProps {
-	activeTab: Category;
-	onTabChange: (category: Category) => void;
+	activeTab: Category
+	onTabChange: (category: Category) => void
 }
 
 export function CategoryTabs({ activeTab, onTabChange }: CategoryTabsProps) {
-	const { t } = useLanguage();
+	const { t } = useLanguage()
 
 	return (
 		<div className="flex flex-wrap gap-2">
 			{categoryList.map((category) => (
 				<button
+					type="button"
 					key={category}
 					onClick={() => onTabChange(category)}
 					className={cn(
@@ -30,5 +31,5 @@ export function CategoryTabs({ activeTab, onTabChange }: CategoryTabsProps) {
 				</button>
 			))}
 		</div>
-	);
+	)
 }

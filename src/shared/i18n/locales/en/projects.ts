@@ -1,4 +1,4 @@
-import type { Dictionary } from "../../types";
+import type { Dictionary } from "../../types"
 
 export const projects: Dictionary["projects"] = {
 	title: "Projects",
@@ -10,4 +10,4 @@ export const projects: Dictionary["projects"] = {
 		Freelance: "Freelance",
 		Studies: "Studies",
 	},
-};
+}

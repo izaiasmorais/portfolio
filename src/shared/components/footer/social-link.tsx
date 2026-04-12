@@ -1,11 +1,11 @@
-import Link from "next/link";
-import { HugeiconsIcon } from "@hugeicons/react";
-import type { IconSvgElement } from "@hugeicons/react";
+import type { IconSvgElement } from "@hugeicons/react"
+import { HugeiconsIcon } from "@hugeicons/react"
+import Link from "next/link"
 
 interface SocialLinkProps {
-	href: string;
-	label: string;
-	icon: IconSvgElement;
+	href: string
+	label: string
+	icon: IconSvgElement
 }
 
 export function SocialLink({ href, label, icon }: SocialLinkProps) {
@@ -19,5 +19,5 @@ export function SocialLink({ href, label, icon }: SocialLinkProps) {
 		>
 			<HugeiconsIcon icon={icon} size={20} aria-hidden="true" />
 		</Link>
-	);
+	)
 }

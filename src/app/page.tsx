@@ -1,5 +1,5 @@
-import { HomeSection } from "@/features/home/components/container";
+import { HomeSection } from "@/features/home/components/container"
 
 export default function HomePage() {
-	return <HomeSection />;
+	return <HomeSection />
 }

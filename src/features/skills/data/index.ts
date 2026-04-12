@@ -1,7 +1,7 @@
-import type { SkillIcon, SkillCategory } from "../types";
+import type { SkillCategory, SkillIcon } from "../types"
 
 function svg(src: string): SkillIcon {
-	return { type: "svg", src };
+	return { type: "svg", src }
 }
 
 function svgThemed(name: string): SkillIcon {
@@ -9,10 +9,10 @@ function svgThemed(name: string): SkillIcon {
 		type: "svg-themed",
 		light: `/skills/${name}-light.svg`,
 		dark: `/skills/${name}-dark.svg`,
-	};
+	}
 }
 
-export { svg, svgThemed };
+export { svg, svgThemed }
 
 export const categories: SkillCategory[] = [
 	{
@@ -97,4 +97,4 @@ export const categories: SkillCategory[] = [
 			{ name: "Ubuntu WSL", icon: svg("/skills/ubuntu.svg") },
 		],
 	},
-];
+]

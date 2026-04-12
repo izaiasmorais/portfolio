@@ -1,8 +1,8 @@
-"use client";
+"use client"
 
-import type { ReactNode } from "react";
-import { ThemeProvider } from "next-themes";
-import { LanguageProvider } from "@/shared/i18n/context";
+import { ThemeProvider } from "next-themes"
+import type { ReactNode } from "react"
+import { LanguageProvider } from "@/shared/i18n/context"
 
 export default function Providers({ children }: { children: ReactNode }) {
 	return (
@@ -16,5 +16,5 @@ export default function Providers({ children }: { children: ReactNode }) {
 				{children}
 			</ThemeProvider>
 		</LanguageProvider>
-	);
+	)
 }

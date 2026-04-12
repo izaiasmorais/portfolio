@@ -1,11 +1,11 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import { SectionContainer } from "@/shared/components/section-container";
-import { useLanguage } from "@/shared/i18n/use-language";
+import Image from "next/image"
+import { SectionContainer } from "@/shared/components/section-container"
+import { useLanguage } from "@/shared/i18n/use-language"
 
 export function HomeSection() {
-	const { t } = useLanguage();
+	const { t } = useLanguage()
 
 	return (
 		<SectionContainer id="home" className="justify-center relative pb-20">
@@ -25,9 +25,7 @@ export function HomeSection() {
 				</div>
 
 				<div className="flex flex-col text-center md:text-left">
-					<h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-						Izaías Morais
-					</h1>
+					<h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">Izaías Morais</h1>
 
 					<p className="text-muted-foreground text-sm md:text-base leading-relaxed max-w-2xl">
 						{t.home.bio}
@@ -35,5 +33,5 @@ export function HomeSection() {
 				</div>
 			</div>
 		</SectionContainer>
-	);
+	)
 }

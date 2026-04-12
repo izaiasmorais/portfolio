@@ -1,17 +1,14 @@
-import Link from "next/link";
-import type { Institution } from "../types";
-import { InstitutionLogo } from "./institution-logo";
-import { EducationTypeBadge } from "./education-type-badge";
-import { CertificateCard } from "./certificate-card";
+import Link from "next/link"
+import type { Institution } from "../types"
+import { CertificateCard } from "./certificate-card"
+import { EducationTypeBadge } from "./education-type-badge"
+import { InstitutionLogo } from "./institution-logo"
 
 export function Timeline({ items }: { items: Institution[] }) {
 	return (
 		<div className="flex flex-col relative max-w-4xl">
 			{items.map((institution, index) => (
-				<div
-					key={index}
-					className="flex gap-6 md:gap-8 group relative pb-12 last:pb-0"
-				>
+				<div key={index} className="flex gap-6 md:gap-8 group relative pb-12 last:pb-0">
 					{index !== items.length - 1 && (
 						<div className="absolute left-6 top-12 bottom-0 w-px bg-border" />
 					)}
@@ -34,9 +31,7 @@ export function Timeline({ items }: { items: Institution[] }) {
 						</Link>
 
 						{institution.subtitle && (
-							<span className="text-sm text-muted-foreground">
-								{institution.subtitle}
-							</span>
+							<span className="text-sm text-muted-foreground">{institution.subtitle}</span>
 						)}
 
 						{institution.entries.map((entry, eIdx) => (
@@ -82,5 +77,5 @@ export function Timeline({ items }: { items: Institution[] }) {
 				</div>
 			))}
 		</div>
-	);
+	)
 }

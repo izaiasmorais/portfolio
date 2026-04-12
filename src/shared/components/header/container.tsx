@@ -1,18 +1,18 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { ThemeSwitcher } from "@/shared/components/header/theme-switcher";
-import { LanguageSwitcher } from "@/shared/i18n/language-switcher";
-import { useLanguage } from "@/shared/i18n/use-language";
-import { cn } from "@/shared/utils/cn";
-import { navPaths } from "./mocks";
-import { MobileNav } from "./mobile-nav";
-import { ResumeDropdown } from "./resume-dropdown";
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { ThemeSwitcher } from "@/shared/components/header/theme-switcher"
+import { LanguageSwitcher } from "@/shared/i18n/language-switcher"
+import { useLanguage } from "@/shared/i18n/use-language"
+import { cn } from "@/shared/utils/cn"
+import { MobileNav } from "./mobile-nav"
+import { navPaths } from "./mocks"
+import { ResumeDropdown } from "./resume-dropdown"
 
 export function Header() {
-	const pathname = usePathname();
-	const { t } = useLanguage();
+	const pathname = usePathname()
+	const { t } = useLanguage()
 
 	return (
 		<header className="fixed top-0 left-0 right-0 z-50 py-6 bg-background/80 backdrop-blur-sm transition-colors duration-300">
@@ -52,5 +52,5 @@ export function Header() {
 				</div>
 			</div>
 		</header>
-	);
+	)
 }

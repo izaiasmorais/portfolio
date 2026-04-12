@@ -1,55 +1,46 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import { SectionContainer } from "@/shared/components/section-container";
-import { cn } from "@/shared/utils/cn";
-import { useLanguage } from "@/shared/i18n/use-language";
-import type { Category, ItemsPerPage } from "../types";
-import { projects } from "../data";
-import { CategoryTabs } from "./category-tabs";
-import { ColumnSwitcher } from "./column-switcher";
-import { ProjectCard } from "./project-card";
-import { Pagination } from "./pagination";
+import { useState } from "react"
+import { SectionContainer } from "@/shared/components/section-container"
+import { useLanguage } from "@/shared/i18n/use-language"
+import { cn } from "@/shared/utils/cn"
+import { projects } from "../data"
+import type { Category, ItemsPerPage } from "../types"
+import { CategoryTabs } from "./category-tabs"
+import { ColumnSwitcher } from "./column-switcher"
+import { Pagination } from "./pagination"
+import { ProjectCard } from "./project-card"
 
 export function ProjectsSection() {
-	const { t } = useLanguage();
-	const [activeTab, setActiveTab] = useState<Category>("All");
-	const [columns, setColumns] = useState<2 | 4>(4);
-	const [currentPage, setCurrentPage] = useState(1);
-	const [itemsPerPage, setItemsPerPage] = useState<ItemsPerPage>(8);
+	const { t } = useLanguage()
+	const [activeTab, setActiveTab] = useState<Category>("All")
+	const [columns, setColumns] = useState<2 | 4>(4)
+	const [currentPage, setCurrentPage] = useState(1)
+	const [itemsPerPage, setItemsPerPage] = useState<ItemsPerPage>(8)
 
 	const filteredProjects =
-		activeTab === "All"
-			? projects
-			: projects.filter((project) => project.category === activeTab);
+		activeTab === "All" ? projects : projects.filter((project) => project.category === activeTab)
 
-	const totalItems = filteredProjects.length;
-	const totalPages = Math.max(1, Math.ceil(totalItems / itemsPerPage));
-	const safePage = Math.min(currentPage, totalPages);
-	const startIndex = (safePage - 1) * itemsPerPage;
-	const paginatedProjects = filteredProjects.slice(
-		startIndex,
-		startIndex + itemsPerPage,
-	);
-	const startItem = totalItems === 0 ? 0 : startIndex + 1;
-	const endItem = Math.min(safePage * itemsPerPage, totalItems);
+	const totalItems = filteredProjects.length
+	const totalPages = Math.max(1, Math.ceil(totalItems / itemsPerPage))
+	const safePage = Math.min(currentPage, totalPages)
+	const startIndex = (safePage - 1) * itemsPerPage
+	const paginatedProjects = filteredProjects.slice(startIndex, startIndex + itemsPerPage)
+	const startItem = totalItems === 0 ? 0 : startIndex + 1
+	const endItem = Math.min(safePage * itemsPerPage, totalItems)
 
 	function handleTabChange(category: Category) {
-		setActiveTab(category);
-		setCurrentPage(1);
+		setActiveTab(category)
+		setCurrentPage(1)
 	}
 
 	function handleItemsPerPageChange(value: ItemsPerPage) {
-		setItemsPerPage(value);
-		setCurrentPage(1);
+		setItemsPerPage(value)
+		setCurrentPage(1)
 	}
 
 	return (
-		<SectionContainer
-			id="projects"
-			title={t.projects.title}
-			subtitle={t.projects.subtitle}
-		>
+		<SectionContainer id="projects" title={t.projects.title} subtitle={t.projects.subtitle}>
 			<div className="flex flex-col w-full">
 				<div className="flex items-center justify-between gap-4 pb-4">
 					<CategoryTabs activeTab={activeTab} onTabChange={handleTabChange} />
@@ -84,5 +75,5 @@ export function ProjectsSection() {
 				)}
 			</div>
 		</SectionContainer>
-	);
+	)
 }

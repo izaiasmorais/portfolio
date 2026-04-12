@@ -1,5 +1,5 @@
-import { ProjectsSection } from "@/features/projects/components/container";
+import { ProjectsSection } from "@/features/projects/components/container"
 
 export default function ProjetosPage() {
-	return <ProjectsSection />;
+	return <ProjectsSection />
 }

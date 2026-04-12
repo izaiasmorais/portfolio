@@ -1,11 +1,11 @@
-"use client";
+"use client"
 
-import type { WorkType } from "../types";
-import { useLanguage } from "@/shared/i18n/use-language";
-import { TypeBadge } from "@/shared/components/type-badge";
+import { TypeBadge } from "@/shared/components/type-badge"
+import { useLanguage } from "@/shared/i18n/use-language"
+import type { WorkType } from "../types"
 
 export function WorkTypeBadge({ type }: { type: WorkType }) {
-	const { t } = useLanguage();
+	const { t } = useLanguage()
 
-	return <TypeBadge label={t.ui.workTypes[type]} />;
+	return <TypeBadge label={t.ui.workTypes[type]} />
 }
