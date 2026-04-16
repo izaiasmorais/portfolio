@@ -1,11 +1,24 @@
 import Image from "next/image"
 import Link from "next/link"
+import { SkillBadge } from "@/shared/components/skill-badge"
+import { resolveSkillsByName } from "@/shared/utils/resolve-skills"
 import type { Job } from "../types"
+import { renderRichText } from "../utils/rich-text"
 import { WorkTypeBadge } from "./work-type-badge"
 
 interface JobCardProps {
 	job: Job
 	isLast: boolean
+}
+
+function getInitials(company: string): string {
+	return company
+		.replace(/[—–-]/g, " ")
+		.split(/\s+/)
+		.filter((word) => /^[A-Za-zÀ-ÿ]/.test(word))
+		.slice(0, 2)
+		.map((word) => word[0]?.toUpperCase() ?? "")
+		.join("")
 }
 
 export function JobCard({ job, isLast }: JobCardProps) {
@@ -17,13 +30,17 @@ export function JobCard({ job, isLast }: JobCardProps) {
 				<div
 					className={`w-12 h-12 rounded-xl flex items-center justify-center shadow-sm z-10 relative overflow-hidden ${job.logoBg}`}
 				>
-					<Image
-						src={job.logo}
-						alt={job.company}
-						width={28}
-						height={28}
-						className="object-contain"
-					/>
+					{job.logo ? (
+						<Image
+							src={job.logo}
+							alt={job.company}
+							width={28}
+							height={28}
+							className="object-contain"
+						/>
+					) : (
+						<span className="text-base font-bold text-foreground">{getInitials(job.company)}</span>
+					)}
 				</div>
 			</div>
 
@@ -32,42 +49,54 @@ export function JobCard({ job, isLast }: JobCardProps) {
 					href={job.url}
 					target="_blank"
 					rel="noopener noreferrer"
-					className="text-lg font-bold text-foreground mb-1 hover:underline w-fit"
+					className="text-xl font-bold text-foreground mb-1 hover:underline w-fit"
 				>
 					{job.company}
 				</Link>
 
-				<div className="text-xs text-muted-foreground mb-4">
+				<div className="text-sm text-muted-foreground mb-5">
 					{job.location} · {job.modality}
 				</div>
 
-				{job.positions.map((position, pIdx) => (
-					<div key={pIdx} className="mb-5 last:mb-0">
-						<div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-							<div className="flex items-center gap-2">
-								<span className="text-sm md:text-base font-medium text-foreground/80">
-									{position.role}
-								</span>
-								<WorkTypeBadge type={position.workType} />
-							</div>
-							<div className="text-xs md:text-sm text-muted-foreground mt-1 md:mt-0">
-								{position.date}
-							</div>
-						</div>
+				{job.positions.map((position, pIdx) => {
+					const techs = position.technologies ? resolveSkillsByName(position.technologies) : []
 
-						<ul className="flex flex-col gap-1.5">
-							{position.description.map((point, i) => (
-								<li
-									key={i}
-									className="text-sm text-muted-foreground leading-relaxed flex items-start"
-								>
-									<span className="mr-2 mt-1.75 w-1.5 h-1.5 rounded-full bg-muted-foreground/40 shrink-0" />
-									{point}
-								</li>
-							))}
-						</ul>
-					</div>
-				))}
+					return (
+						<div key={pIdx} className="mb-7 last:mb-0">
+							<div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
+								<div className="flex items-center gap-2">
+									<span className="text-base md:text-lg font-medium text-foreground/80">
+										{position.role}
+									</span>
+									<WorkTypeBadge type={position.workType} />
+								</div>
+								<div className="text-sm md:text-base text-muted-foreground mt-1 md:mt-0">
+									{position.date}
+								</div>
+							</div>
+
+							<ul className="flex flex-col gap-2">
+								{position.description.map((point, i) => (
+									<li
+										key={i}
+										className="text-base text-muted-foreground leading-relaxed flex items-start"
+									>
+										<span className="mr-3 mt-2.5 w-1.5 h-1.5 rounded-full bg-muted-foreground/40 shrink-0" />
+										<span>{renderRichText(point)}</span>
+									</li>
+								))}
+							</ul>
+
+							{techs.length > 0 && (
+								<div className="flex flex-wrap gap-2 mt-5">
+									{techs.map((tech) => (
+										<SkillBadge key={tech.name} {...tech} />
+									))}
+								</div>
+							)}
+						</div>
+					)
+				})}
 			</div>
 		</div>
 	)

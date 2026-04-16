@@ -5,6 +5,7 @@ export interface Position {
 	date: string
 	description: string[]
 	workType: WorkType
+	technologies?: string[]
 }
 
 export interface Job {
@@ -13,6 +14,6 @@ export interface Job {
 	positions: Position[]
 	location: string
 	modality: string
-	logo: string
+	logo?: string
 	logoBg: string
 }
