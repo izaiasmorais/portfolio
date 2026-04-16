@@ -1,5 +1,4 @@
 "use client"
-
 import { createContext, type ReactNode, useEffect, useState } from "react"
 import { en } from "./locales/en"
 import { ptBR } from "./locales/pt-BR"

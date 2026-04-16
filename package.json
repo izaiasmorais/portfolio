@@ -6,7 +6,6 @@
 		"dev": "next dev --port 3030",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint",
 		"check": "biome check ./src",
 		"fix": "biome check --fix ./src"
 	},
