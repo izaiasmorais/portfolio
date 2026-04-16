@@ -22,10 +22,12 @@ export function SectionContainer({
 		>
 			{title && (
 				<div className="flex flex-col gap-2 mb-12">
-					<h2 className="text-3xl font-bold text-foreground">{title}</h2>
+					<h2 className="text-4xl font-bold text-foreground">{title}</h2>
 
 					{subtitle && (
-						<span className="font-normal text-muted-foreground tracking-wide">{subtitle}</span>
+						<span className="text-lg font-normal text-muted-foreground tracking-wide">
+							{subtitle}
+						</span>
 					)}
 				</div>
 			)}

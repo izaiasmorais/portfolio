@@ -1,5 +1,4 @@
 "use client"
-
 import { useState } from "react"
 import { SectionContainer } from "@/shared/components/section-container"
 import { useLanguage } from "@/shared/i18n/use-language"

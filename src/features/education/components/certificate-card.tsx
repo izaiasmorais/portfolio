@@ -12,7 +12,7 @@ export function CertificateCard({ title, image, url, skills }: Certificate) {
 
 	return (
 		<div className="flex flex-col gap-3 rounded-lg border border-border bg-white dark:bg-muted/30 p-3">
-			<span className="text-sm font-medium text-foreground/80">{title}</span>
+			<span className="text-base font-medium text-foreground/80">{title}</span>
 
 			<div className="flex flex-col sm:flex-row gap-4">
 				<div className="relative w-full sm:w-70 shrink-0 aspect-[1.414/1] rounded-md overflow-hidden border border-border">
@@ -39,7 +39,7 @@ export function CertificateCard({ title, image, url, skills }: Certificate) {
 						href={url}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="flex items-center gap-1.5 text-xs font-medium text-foreground/70
+						className="flex items-center gap-1.5 text-sm font-medium text-foreground/70
 						hover:text-foreground transition-colors w-fit px-2.5 py-1.5 rounded-md border border-border"
 					>
 						<HugeiconsIcon icon={LinkSquare02Icon} size={14} strokeWidth={2} />

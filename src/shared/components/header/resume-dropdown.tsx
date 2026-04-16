@@ -32,7 +32,7 @@ export function ResumeDropdown({ className }: ResumeDropdownProps) {
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
 				<GlowButton className={className}>
-					<span className="text-xs">{t.ui.header.resume}</span>
+					<span className="text-sm">{t.ui.header.resume}</span>
 				</GlowButton>
 			</DropdownMenuTrigger>
 

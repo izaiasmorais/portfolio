@@ -25,7 +25,7 @@ export function Timeline({ items }: { items: Institution[] }) {
 							href={institution.url}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-lg font-bold text-foreground hover:underline w-fit"
+							className="text-xl font-bold text-foreground hover:underline w-fit"
 						>
 							{institution.name}
 						</Link>
@@ -35,29 +35,29 @@ export function Timeline({ items }: { items: Institution[] }) {
 						)}
 
 						{institution.entries.map((entry, eIdx) => (
-							<div key={eIdx} className="mb-5 last:mb-0 mt-2">
-								<div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+							<div key={eIdx} className="mb-7 last:mb-0 mt-3">
+								<div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
 									<div className="flex items-center gap-2">
-										<span className="text-sm md:text-base font-medium text-foreground/80">
+										<span className="text-base md:text-lg font-medium text-foreground/80">
 											{entry.title}
 										</span>
 
 										<EducationTypeBadge type={entry.type} />
 									</div>
 
-									<div className="text-xs md:text-sm text-muted-foreground mt-1 md:mt-0">
+									<div className="text-sm md:text-base text-muted-foreground mt-1 md:mt-0">
 										{entry.date}
 									</div>
 								</div>
 
 								{entry.description.length > 0 && (
-									<ul className="flex flex-col gap-1.5">
+									<ul className="flex flex-col gap-2">
 										{entry.description.map((point, i) => (
 											<li
 												key={i}
-												className="text-sm text-muted-foreground leading-relaxed flex items-start"
+												className="text-base text-muted-foreground leading-relaxed flex items-start"
 											>
-												<span className="mr-2 mt-1.75 w-1.5 h-1.5 rounded-full bg-muted-foreground/40 shrink-0" />
+												<span className="mr-3 mt-2.5 w-1.5 h-1.5 rounded-full bg-muted-foreground/40 shrink-0" />
 												{point}
 											</li>
 										))}

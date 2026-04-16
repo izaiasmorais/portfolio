@@ -53,8 +53,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
 			<div className="p-4 flex flex-col flex-1">
 				<div className="flex items-start justify-between mb-2">
 					<div className="flex flex-col min-w-0">
-						<h3 className="font-semibold text-foreground text-sm truncate pr-2">{project.name}</h3>
-						<span className="text-xs text-muted-foreground">
+						<h3 className="font-medium text-foreground text-base truncate pr-2">{project.name}</h3>
+						<span className="text-sm text-muted-foreground">
 							{t.projects.categories[project.category]}
 							{project.year && ` · ${project.year}`}
 						</span>

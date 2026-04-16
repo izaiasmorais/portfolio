@@ -27,7 +27,7 @@ export function HomeSection() {
 				<div className="flex flex-col text-center md:text-left">
 					<h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">Izaías Morais</h1>
 
-					<p className="text-muted-foreground text-sm md:text-base leading-relaxed max-w-2xl">
+					<p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl">
 						{t.home.bio}
 					</p>
 				</div>

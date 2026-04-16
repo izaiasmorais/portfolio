@@ -10,7 +10,7 @@ const MAX_VISIBLE = 3
 
 function Badge({ label }: { label: string }) {
 	return (
-		<span className="px-2 py-0.5 bg-secondary text-muted-foreground text-[10px] font-medium rounded-md border border-border">
+		<span className="px-2 py-0.5 bg-secondary text-muted-foreground text-xs font-medium rounded-md border border-border">
 			{label}
 		</span>
 	)
@@ -31,7 +31,7 @@ export function TechBadges({ stack }: TechBadgesProps) {
 			{hidden.length > 0 && (
 				<Tooltip>
 					<TooltipTrigger asChild>
-						<span className="px-2 py-0.5 bg-secondary text-muted-foreground text-[10px] font-medium rounded-md border border-border cursor-default">
+						<span className="px-2 py-0.5 bg-secondary text-muted-foreground text-xs font-medium rounded-md border border-border cursor-default">
 							+{hidden.length}
 						</span>
 					</TooltipTrigger>
