@@ -1,9 +1,9 @@
 "use client"
 
 import { SectionContainer } from "@/shared/components/section-container"
+import { SkillBadge } from "@/shared/components/skill-badge"
+import { categories } from "@/shared/data/skills"
 import { useLanguage } from "@/shared/i18n/use-language"
-import { categories } from "../data"
-import { SkillBadge } from "./skill-badge"
 
 export function SkillsSection() {
 	const { t } = useLanguage()

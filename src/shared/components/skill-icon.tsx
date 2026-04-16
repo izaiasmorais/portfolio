@@ -1,5 +1,5 @@
 import Image from "next/image"
-import type { SkillIcon as SkillIconType } from "../types"
+import type { SkillIcon as SkillIconType } from "@/shared/types/skill"
 
 interface SkillIconProps {
 	icon: SkillIconType

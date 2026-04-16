@@ -1,10 +1,11 @@
-import type { SkillCategory, SkillIcon } from "../types"
+import type { SkillCategoryKey } from "@/shared/i18n/types"
+import type { Skill, SkillIcon } from "@/shared/types/skill"
 
-function svg(src: string): SkillIcon {
+export function svg(src: string): SkillIcon {
 	return { type: "svg", src }
 }
 
-function svgThemed(name: string): SkillIcon {
+export function svgThemed(name: string): SkillIcon {
 	return {
 		type: "svg-themed",
 		light: `/skills/${name}-light.svg`,
@@ -12,7 +13,10 @@ function svgThemed(name: string): SkillIcon {
 	}
 }
 
-export { svg, svgThemed }
+export interface SkillCategory {
+	key: SkillCategoryKey
+	skills: Skill[]
+}
 
 export const categories: SkillCategory[] = [
 	{
