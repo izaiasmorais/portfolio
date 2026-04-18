@@ -1,14 +1,31 @@
 import type { Metadata } from "next"
 import { EducationSection } from "@/features/education/components/container"
 
+const description =
+	"Formação acadêmica e cursos complementares de Izaias Morais — bacharelado em Ciência da Computação na UFPI e certificações em desenvolvimento web."
+
 export const metadata: Metadata = {
-	title: "Formação · Izaias Morais",
+	title: "Formação",
+	description,
+	keywords: [
+		"formação",
+		"educação",
+		"Ciência da Computação",
+		"UFPI",
+		"cursos",
+		"certificações",
+		"Izaias Morais",
+	],
+	alternates: { canonical: "/formacao" },
 	openGraph: {
-		title: "Formação · Izaias Morais",
-		images: [{ url: "/api/og?page=education", width: 1200, height: 630, alt: "Formação - Izaias Morais" }],
+		type: "website",
+		url: "/formacao",
+		title: "Formação",
+		description,
 	},
 	twitter: {
-		images: ["/api/og?page=education"],
+		title: "Formação",
+		description,
 	},
 }
 

@@ -1,14 +1,33 @@
 import type { Metadata } from "next"
 import { SkillsSection } from "@/features/skills/components/container"
 
+const description =
+	"Stack técnica de Izaias Morais — linguagens, frameworks frontend e backend, bancos de dados, ferramentas de DevOps e demais tecnologias com as quais trabalho."
+
 export const metadata: Metadata = {
-	title: "Habilidades · Izaias Morais",
+	title: "Habilidades",
+	description,
+	keywords: [
+		"habilidades",
+		"stack",
+		"TypeScript",
+		"React",
+		"Next.js",
+		"Node.js",
+		"PostgreSQL",
+		"Docker",
+		"Izaias Morais",
+	],
+	alternates: { canonical: "/habilidades" },
 	openGraph: {
-		title: "Habilidades · Izaias Morais",
-		images: [{ url: "/api/og?page=skills", width: 1200, height: 630, alt: "Habilidades - Izaias Morais" }],
+		type: "website",
+		url: "/habilidades",
+		title: "Habilidades",
+		description,
 	},
 	twitter: {
-		images: ["/api/og?page=skills"],
+		title: "Habilidades",
+		description,
 	},
 }
 

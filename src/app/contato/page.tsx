@@ -1,14 +1,23 @@
 import type { Metadata } from "next"
 import { ContactSection } from "@/features/contact/components/container"
 
+const description =
+	"Vamos conversar. Entre em contato com Izaias Morais por e-mail, LinkedIn, WhatsApp ou pelo formulário do site para projetos, freelas ou oportunidades."
+
 export const metadata: Metadata = {
-	title: "Contato · Izaias Morais",
+	title: "Contato",
+	description,
+	keywords: ["contato", "Izaias Morais", "freelancer", "fullstack", "Teresina"],
+	alternates: { canonical: "/contato" },
 	openGraph: {
-		title: "Contato · Izaias Morais",
-		images: [{ url: "/api/og?page=contact", width: 1200, height: 630, alt: "Contato - Izaias Morais" }],
+		type: "website",
+		url: "/contato",
+		title: "Contato",
+		description,
 	},
 	twitter: {
-		images: ["/api/og?page=contact"],
+		title: "Contato",
+		description,
 	},
 }
 

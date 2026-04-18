@@ -1,14 +1,31 @@
 import type { Metadata } from "next"
 import { ProjectsSection } from "@/features/projects/components/container"
 
+const description =
+	"Mais de 50 projetos pessoais, profissionais, freelas e estudos desenvolvidos por Izaias Morais com TypeScript, React, Next.js, Node.js e mais."
+
 export const metadata: Metadata = {
-	title: "Projetos · Izaias Morais",
+	title: "Projetos",
+	description,
+	keywords: [
+		"projetos",
+		"portfólio",
+		"open source",
+		"React",
+		"Next.js",
+		"TypeScript",
+		"Izaias Morais",
+	],
+	alternates: { canonical: "/projetos" },
 	openGraph: {
-		title: "Projetos · Izaias Morais",
-		images: [{ url: "/api/og?page=projects", width: 1200, height: 630, alt: "Projetos - Izaias Morais" }],
+		type: "website",
+		url: "/projetos",
+		title: "Projetos",
+		description,
 	},
 	twitter: {
-		images: ["/api/og?page=projects"],
+		title: "Projetos",
+		description,
 	},
 }
 
