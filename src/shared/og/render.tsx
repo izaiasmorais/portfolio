@@ -37,23 +37,12 @@ export async function renderOg({ label, title, subtitle, bio }: OgPageContent) {
 		>
 			<div
 				style={{
-					position: "absolute",
-					left: 0,
-					top: 0,
-					bottom: 0,
-					width: 6,
-					background: "linear-gradient(to bottom, #7c3aed, #2563eb)",
-				}}
-			/>
-
-			<div
-				style={{
 					display: "flex",
 					flexDirection: "column",
 					paddingTop: 64,
 					paddingRight: 72,
 					paddingBottom: 56,
-					paddingLeft: 84,
+					paddingLeft: 72,
 					flex: 1,
 					justifyContent: "space-between",
 				}}
